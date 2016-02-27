@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/login.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/base.css">
+	<title>login</title>
+</head>
+<body>
+	<div class="g-hd">
+		<a class="logo" href="Gauldin.html"><img src="../src/img/homePage/logo.png"></a>
+	</div>
+	<div class="g-bd clearfix">
+		<div class="g-sd clearfix">
+			<form>
+				<p><input id="username" class="u-input" type="text" name="username" placeholder="请输入与验证手机/邮箱"></p>
+				<p><input class="u-input" type="password" name="password" placeholder="请输入密码"></p>
+				<p class="fgtPwd"><a href="#">忘记密码 ?</a></p>
+				<p><button class="u-submit" type="submit">登   录</button></p>
+			</form>
+			<p class="noLogin">
+				<label>还没有注册?</label>	
+				<a href="register.html">立即注册<i class="self-icon">&#xe904;</i></a>
+			</p>
+		</div>
+		<div class="g-mn clearfix">
+			<p>使用以下账号直接登录</p>
+			<div class="icnLst">
+				<a><img src="../src/img/login/icon-qq.png"></a>
+				<a><img src="../src/img/login/icon-wc.png"></a>
+				<a><img src="../src/img/login/icon-sina.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft"></div>
+	<script type="text/javascript">
+	var username = document.getElementById('username');
+	username.onblur = function(){
+		if(!/^1\d{10}/.test(username.value)&&!/^.+@.+\.com$/.test(username.value)&&username.value != '')
+			username.className += ' vertfError';
+		else
+			username.className = 'u-input';
+	}
+	</script>
+	<script src="../src/js/jquery-1.11.3.min.js"></script>
+	<script src="../src/js/jquery.placeholder.min.js"></script>
+	<script src="../src/js/placeholder.js"></script>
+</body>
+</html>

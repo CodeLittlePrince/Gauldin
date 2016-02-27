@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/home.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/dashboard-base.css">
+	<title>user-dashbord-3</title>
+	<style type="text/css">
+		.filter .tt{font-weight: bold;}
+		.filter a{display: inline-block; *display: inline; *zoom: 1; padding: 5px 8px; }
+		.filter .active{background-color: #6899ff; color: #fff; border-radius: 2px;}
+		.filter li{margin:10px 20px 0 20px;}
+		.subDetail .reduceHeight{height: 50px;}
+		.detailBox{height: 100px;}
+		.detailBox .salary{color: red; font-size: 18px;}
+		.detailBox .profileStatus{color: #111;}
+		.g-bd .g-mn .detailBox .b-mn .gray{background-color: #ccc;}
+		.g-bd .g-mn .detailBox .blueBack{background-color: #6599ff; margin-left: 400px; height: 90px; padding-top: 10px;}
+		.g-bd .g-mn .detailBox .blueBack span{font-size: 16px; color: #fff;}
+		.lightBox{position: fixed; left: 0; top: 0; display: none; width: 100%; height: 100%; background-color: rgba(11,11,11,0.5);  }
+		.g-bd .g-mn .detailBox .blueBack .p{margin-bottom: 10px;}
+		.lightBox .lightBoxSub form p{margin: 20px 0;}
+		.lightBox .lightBoxSub form p input[type='text']{height: 25px; width: 200px;}
+		.lightBox .lightBoxSub form p input[type='button']{margin-left: 50px;}
+		.g-bd .g-mn .detailBox .b-sdl{float: left; margin-right: 15px; border: 1px solid #ccc;}
+		.g-bd .g-mn .detailBox .b-sd .inc{margin-top: 15px; margin-left: 2px;}
+		.g-bd .g-mn .detailBox .b-sd p{margin-top: 15px;}
+		/*.g-bd .g-mn .detailBox .b-mn .publishTime{margin-bottom: 32px;}*/
+		.g-bd .g-mn .detailBox .b-ft textarea{width: 530px; height: 98px; margin-left: 70px; margin-top: 20px; padding: 10px;}
+		.g-bd .g-mn .detailBox .b-ft .submit a{display: inline-block; *display: inline; *zoom: 1; padding: 8px 45px; background-color: #6599ff; font-size: 18px; color: #fff; border-radius: 1px; margin-left: 495px; margin-top: 20px;}
+		.g-bd .g-mn .detailBox .b-ft .commentDetail{margin-top: 30px;}
+		.g-bd .g-mn .detailBox .b-ft .commentDetail img{float: left; margin-right: 20px; width: 40px; height: 40px; border: 3px solid #ccc; border-radius: 50%;}
+		.g-bd .g-mn .detailBox .b-ft .commentDetail p{padding-top: 13px;}
+		.g-bd .g-mn .detailBox .b-ft .subComment{margin: 10px;}
+		.g-bd .g-mn .detailBox .b-ft .subComment .publisher-thumb{width: 40px; height: 40px; border: 3px solid #ccc; border-radius: 50%;}
+		.g-bd .g-mn .moreComment{margin-left: 600px;}
+		.g-bd .g-mn .moreComment a{font-size: 18px;}
+	</style>
+</head>
+<body>
+	<div class="fixed">
+		<div id="top" class="g-hd clearfix">
+			<div class="g-sd">
+				<div class="logo">
+					<a class="logo" href="Gauldin.html"><img src="../src/img/homePage/logo.png"></a>
+				</div>
+			</div>
+			<div class="g-sdr">
+				<div class="u-log">
+					<a href="login.html">
+						<button type="button">登录</button>
+					</a>			
+				</div>
+				<div class="u-reg">		
+					<a href="#">
+						<button type="button">注册</button>
+					</a>		
+				</div>
+			</div>
+			<div class="g-mn">
+				<div class="m-nav">
+					<div class="menu" >
+						<ul>
+							<li><a href="Gauldin.html">首页</a></li>
+							<li><a href="recruitment.html">招聘</a></li>
+							<li><a href="#">职业规划</a></li>
+							<li><a href="#">创业孵化</a></li>
+						</ul>
+					</div>
+					<div id="burger" >
+						<span class="u-burger">
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>
+						<div id="hd-menu" class="hd-menu" style="display:none;">
+							<ul>
+								<li><a href="Gauldin.html">首页</a></li>
+								<li><a href="recruitment.html">招聘</a></li>
+								<li><a href="#">职业规划</a></li>
+								<li><a href="#">创业孵化</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mid">
+		<div class="g-bd">
+			<div class="fixed">
+				<div class="g-sd">
+					<div class="tt">
+						<h3>个人中心</h3>
+					</div>
+					<div class="category">
+						<ul>
+							<li><a href="user-dashboard-4.html">简历预览<i class="self-icon">&#xe908;</i></a></li>
+							<li><a href="user-dashboard-4.html">基本信息</a></li>
+							<li><a href="user-dashboard-4.html#workExp">工作经历</a></li>
+							<li><a href="user-dashboard-4.html#selfDesc">自我描述</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">简历投递状态</a></li>
+							<li><a href="">投递成功</a></li>
+							<li><a href="">被查看</a></li>
+							<li><a href="">待沟通</a></li>
+							<li><a href="">通知面试</a></li>
+						</ul>
+						<ul>
+							<li><a href="user-dashboard-2.html">面试评价</a></li>
+						</ul>
+						<ul>
+							<li><a href="user-dashboard-1.html">我收藏的职位</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+			<div class="g-mn">
+				<div class="subTt">
+					<!-- 我收藏的职位 -->
+					<label>简历投递状态</label>
+				</div>
+				<div class="subDetail">
+					<!-- 细节 -->
+					<div class="detailBox reduceHeight">
+						<div class="filter">
+							<ul>
+								<li id="profileState">
+									<span class="tt">简历状态：</span>
+									<a id="unreadBtn" href="#" class="active">未读</a>
+									<a id="unComuBtn" href="#">待沟通</a>
+									<a id="interviewBtn" href="#">已安排面试</a>
+									<a id="unfitBtn" href="#">不合适</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="unRead" class="unRead">
+						<div class="detailBox">
+							<div class="b-sd">
+								<a href="#" class="position">市场规划</a>
+								<span class="salary">(<span>2K-5K</span>)</span>
+								<div class="inc">
+									<a>海南微软创新中心</a>
+								</div>
+								<p>
+									<label>使用简历:</label>
+									<label class="profileStatus">在线简历</label>
+								</p>
+							</div>
+							<div class="b-mn">
+								<p class="publishTime">
+									<span>发布时间：</span>
+									<span class="time">2015/11/18  </span>
+								</p>
+								<a href="javascript:;" class="sendProfile btn-comment gray">未读</a>
+							</div>
+							<div class="b-ft hasSub z-hidden">
+								<div class="comment">
+									<textarea></textarea>
+								</div>
+								<div class="submit">
+									<a href="javascript:;">提交</a>
+								</div>						
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="b-sd">
+								<a href="#" class="position">市场规划</a>
+								<span class="salary">(<span>2K-5K</span>)</span>
+								<div class="inc">
+									<a>海南微软创新中心</a>
+								</div>
+								<p>
+									<label>使用简历:</label>
+									<label class="profileStatus">在线简历</label>
+								</p>
+							</div>
+							<div class="b-mn">
+								<p class="publishTime">
+									<span>发布时间：</span>
+									<span class="time">2015/11/18  </span>
+								</p>
+								<a href="javascript:;" class="sendProfile btn-comment gray">未读</a>
+							</div>
+							<div class="b-ft hasSub z-hidden">
+								<div class="comment">
+									<textarea></textarea>
+								</div>
+								<div class="submit">
+									<a href="javascript:;">提交</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+					<div id="unCommun" class="unCommun" style="display:none;">
+						<div class="detailBox">
+							<div class="b-sd">
+								<a href="#" class="position">市场规划</a>
+								<span class="salary">(<span>2K-5K</span>)</span>
+								<div class="inc">
+									<a>海南微软创新中心</a>
+								</div>
+								<p>
+									<label>使用简历:</label>
+									<label class="profileStatus">在线简历</label>
+								</p>
+							</div>
+							<div class="b-mn blueBack">
+								<p class="publishTime">
+									<span>公司电话：</span>
+									<span>13093810291 </span>
+								</p>
+								<p class="publishTime">
+									<span>公司邮箱：</span>
+									<span>zhidao@126.com </span>
+								</p>
+							</div>
+							<div class="b-ft hasSub z-hidden">
+								<div class="comment">
+									<textarea></textarea>
+								</div>
+								<div class="submit">
+									<a href="javascript:;">提交</a>
+								</div>						
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="b-sd">
+								<a href="#" class="position">市场规划</a>
+								<span class="salary">(<span>2K-5K</span>)</span>
+								<div class="inc">
+									<a>海南微软创新中心</a>
+								</div>
+								<p>
+									<label>使用简历:</label>
+									<label class="profileStatus">在线简历</label>
+								</p>
+							</div>
+							<div class="b-mn blueBack">
+								<p class="publishTime">
+									<span>公司电话：</span>
+									<span>13093810291 </span>
+								</p>
+								<p class="publishTime">
+									<span>公司邮箱：</span>
+									<span>zhidao@126.com </span>
+								</p>
+							</div>
+							<div class="b-ft hasSub z-hidden">
+								<div class="comment">
+									<textarea></textarea>
+								</div>
+								<div class="submit">
+									<a href="javascript:;">提交</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+					<div id="interview" class="interviewArranged" style="display:none;">
+						<div class="detailBox">
+							<div class="b-sd">
+								<a href="#" class="position">市场规划</a>
+								<span class="salary">(<span>2K-5K</span>)</span>
+								<div class="inc">
+									<a>海南微软创新中心</a>
+								</div>
+								<p>
+									<label>使用简历:</label>
+									<label class="profileStatus">在线简历</label>
+								</p>
+							</div>
+							<div class="b-mn blueBack">
+								<p class="p">
+									<span>面试时间：</span>
+									<span>2015年1月12日 </span>
+								</p>
+								<p class="p">
+									<span>面试地点：</span>
+									<span>海南生态软件园A15 </span>
+								</p>
+								<p class="p">
+									<span>公司电话：</span>
+									<span>0898-99874756 </span>
+								</p>
+							</div>
+							<div class="b-ft hasSub z-hidden">
+								<div class="comment">
+									<textarea></textarea>
+								</div>
+								<div class="submit">
+									<a href="javascript:;">提交</a>
+								</div>						
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="b-sd">
+								<a href="#" class="position">市场规划</a>
+								<span class="salary">(<span>2K-5K</span>)</span>
+								<div class="inc">
+									<a>海南微软创新中心</a>
+								</div>
+								<p>
+									<label>使用简历:</label>
+									<label class="profileStatus">在线简历</label>
+								</p>
+							</div>
+							<div class="b-mn blueBack">
+								<p class="publishTime">
+									<span>公司电话：</span>
+									<span>13093810291 </span>
+								</p>
+								<p class="publishTime">
+									<span>公司邮箱：</span>
+									<span>zhidao@126.com </span>
+								</p>
+							</div>
+							<div class="b-ft hasSub z-hidden">
+								<div class="comment">
+									<textarea></textarea>
+								</div>
+								<div class="submit">
+									<a href="javascript:;">提交</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+					<div id="unfitable" class="unfitable" style="display:none;">
+						<div class="detailBox">
+							<div class="b-sd">
+								<a href="#" class="position">市场规划</a>
+								<span class="salary">(<span>2K-5K</span>)</span>
+								<div class="inc">
+									<a>海南微软创新中心</a>
+								</div>
+								<p>
+									<label>使用简历:</label>
+									<label class="profileStatus">在线简历</label>
+								</p>
+							</div>
+							<div class="b-mn">
+								<p class="publishTime">
+									<span>发布时间：</span>
+									<span class="time">2015/11/18  </span>
+								</p>
+								<a href="javascript:;" class="sendProfile btn-comment gray">不适合</a>
+							</div>
+							<div class="b-ft hasSub z-hidden">
+								<div class="comment">
+									<textarea></textarea>
+								</div>
+								<div class="submit">
+									<a href="javascript:;">提交</a>
+								</div>						
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="b-sd">
+								<a href="#" class="position">市场规划</a>
+								<span class="salary">(<span>2K-5K</span>)</span>
+								<div class="inc">
+									<a>海南微软创新中心</a>
+								</div>
+								<p>
+									<label>使用简历:</label>
+									<label class="profileStatus">在线简历</label>
+								</p>
+							</div>
+							<div class="b-mn">
+								<p class="publishTime">
+									<span>发布时间：</span>
+									<span class="time">2015/11/18  </span>
+								</p>
+								<a href="javascript:;" class="sendProfile btn-comment gray">不适合</a>
+							</div>
+							<div class="b-ft hasSub z-hidden">
+								<div class="comment">
+									<textarea></textarea>
+								</div>
+								<div class="submit">
+									<a href="javascript:;">提交</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+					<div id="allowed" class="allowed" style="display:none;">
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft">
+		<div>
+			<!-- 公司落款 -->
+		</div>
+	</div>
+	<script type="text/javascript" src="../src/js/base.js"></script>
+	<script type="text/javascript">
+	//控制items的class
+	var profileState = $('profileState');
+	// var workExper = $('workExper');
+	// var education = $('education');
+	var profileStates = profileState.getElementsByTagName('a');
+	// var workExpers = workExper.getElementsByTagName('a');
+	// var educations = education.getElementsByTagName('a');
+	function stateSelectHandler (i,items) {
+		return function(){
+			for (var j = 0; j < items.length; j++) {
+				items[j].className = '';
+			}
+			items[i].className = 'active';
+		}
+	}
+	function changeCrt (items) {
+		for (var i = 0; i < items.length; i++) {
+			var stateSelect = stateSelectHandler(i,items);
+			addEvent(items[i],'click',stateSelect,false);
+		}
+	}
+	changeCrt(profileStates);
+	// changeCrt(workExpers);
+	// changeCrt(educations);
+		//控制filter
+		var unreadBtn = $('unreadBtn');
+		var unComuBtn = $('unComuBtn');
+		var interviewBtn = $('interviewBtn');
+		var unfitBtn = $('unfitBtn');
+		// var allowBtn = $('allowBtn');
+
+		var collection = [];
+		var unRead = $('unRead');
+		collection.push(unRead);
+		var unCommun = $('unCommun');
+		collection.push(unCommun);
+		var interview = $('interview');
+		collection.push(interview);
+		var unfitable = $('unfitable');
+		collection.push(unfitable);
+		var allowed = $('allowed');
+		collection.push(allowed);
+		//
+		function changeBox (elm,div) {
+			elm.onclick = function(){
+			for (var i = 0; i < collection.length; i++) {
+				collection[i].style.display = 'none';
+			}
+			div.style.display = 'block';
+			}
+		}
+		changeBox(unreadBtn,unRead);
+		changeBox(unComuBtn,unCommun);
+		changeBox(interviewBtn,interview);
+		changeBox(unfitBtn,unfitable);
+		// changeBox(allowBtn,allowed);
+		//出现lightBox
+		var btnCheck = getElementsByClassName('btn-check',interview);
+		var btnCom = getElementsByClassName('btn-com',unCommun);
+		var lightBoxCheck = getElementsByClassName('lightBoxCheck',interview);
+		var lightBoxCom = getElementsByClassName('lightBoxCom',unCommun);
+		var boxComCancel;
+		var boxCheckCancel;
+		// function cancelCheckHandeler (i) {
+		// 	return function(){
+		// 		lightBoxCheck[i].style.display = 'none';
+		// 	}
+		// }
+		function checkHandeler (i) {
+			return function(){
+				lightBoxCheck[i].style.display = 'block';
+				boxCheckCancel = getElementsByClassName('boxCheckCancel',interview);
+				boxCheckCancel[i].onclick = function(){
+					lightBoxCheck[i].style.display = 'none';
+				}
+			}
+		}
+
+		for (var i = 0; i < btnCheck.length; i++) {
+			var check = checkHandeler(i);
+			btnCheck[i].onclick = check;		
+		}
+
+		function comHandeler (i) {
+			return function(){
+				lightBoxCom[i].style.display = 'block';
+				boxComCancel = getElementsByClassName('boxComCancel',unCommun);
+				boxComCancel[i].onclick = function(){
+					lightBoxCom[i].style.display = 'none';
+				}
+			}
+		}
+
+		for (var i = 0; i < btnCheck.length; i++) {
+			var com = comHandeler(i);
+			btnCom[i].onclick = com;		
+		}
+	</script>
+</body>
+</html>

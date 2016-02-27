@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/home.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/dashboard-base.css">
+	<title>inc-dashboard-2.html</title>
+	<style type="text/css">
+		.filter .tt{font-weight: bold;}
+		.filter a{display: inline-block; *display: inline; *zoom: 1; padding: 5px 8px; }
+		.filter .active{background-color: #6899ff; color: #fff; border-radius: 2px;}
+		.filter li{margin:10px 20px 0 20px;}
+		.detailBox{height: 100px;}
+		.detailBox .left{float: left; width: 100px; margin-top: 15px;}
+		.detailBox .mid{float: left; margin-top: 15px;}
+		.detailBox .mid p:first-child{margin-bottom: 35px;}
+		.detailBox .right{float: right; margin-top: 5px; margin-right: 30px;}
+		.detailBox .right a{margin-bottom: 10px;}
+		.lightBox{position: fixed; left: 0; top: 0; display: none; width: 100%; height: 100%; background-color: rgba(11,11,11,0.5);  }
+		.lightBox .lightBoxSub{position: relative; width: 280px; height: 130px; margin:200px 0 0 38%; padding: 20px 50px 100px 60px; background-color: #fff; border: 1px solid #aaa; border-radius: 2px;}
+		.lightBox .lightBoxSub form p{margin: 20px 0;}
+		.lightBox .lightBoxSub form p input[type='text']{height: 25px; width: 200px;}
+		.lightBox .lightBoxSub form p input[type='button']{margin-left: 50px;}
+	</style>
+</head>
+<body>
+	<div class="fixed">
+		<div id="top" class="g-hd clearfix">
+			<div class="g-sd">
+				<div class="logo">
+					<a class="logo" href="Gauldin.html"><img src="../src/img/homePage/logo.png"></a>
+				</div>
+			</div>
+			<div class="g-sdr">
+				<div class="u-log">
+					<a href="login.html">
+						<button type="button">登录</button>
+					</a>			
+				</div>
+				<div class="u-reg">		
+					<a href="#">
+						<button type="button">注册</button>
+					</a>		
+				</div>
+			</div>
+			<div class="g-mn">
+				<div class="m-nav">
+					<div class="menu" >
+						<ul>
+							<li><a href="Gauldin.html">首页</a></li>
+							<li><a href="recruitment.html">招聘</a></li>
+							<li><a href="#">职业规划</a></li>
+							<li><a href="#">创业孵化</a></li>
+						</ul>
+					</div>
+					<div id="burger" >
+						<span class="u-burger">
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>
+						<div id="hd-menu" class="hd-menu" style="display:none;">
+							<ul>
+								<li><a href="Gauldin.html">首页</a></li>
+								<li><a href="recruitment.html">招聘</a></li>
+								<li><a href="#">职业规划</a></li>
+								<li><a href="#">创业孵化</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mid">
+		<div class="g-bd">
+			<div class="fixed">
+				<div class="g-sd">
+					<div class="tt">
+						<h3>个人中心</h3>
+					</div>
+					<div class="category">
+						<ul>
+							<li><a href="#publishNewPosition">发布新职位</a></li>
+							<li><a href="">已发布职位</a></li>
+							<li><a href="#validPosition">有效职位</a></li>
+							<li><a href="">已下线职位</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">简历管理</a></li>							
+						</ul>
+						<ul>
+							<li><a href="inc-dashboard-3.html">评价管理</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="g-mn">
+				<div id="publishNewPosition" class="subTt">
+					<!-- 我收藏的职位 -->
+					<label>简历管理</label>
+				</div>
+				<div class="subDetail">
+					<!-- 细节 -->
+					<div class="detailBox">
+						<div class="filter">
+							<ul>
+								<li id="profileState">
+									<span class="tt">简历状态：</span>
+									<a id="unreadBtn" href="#" class="active">未读</a>
+									<a id="unComuBtn" href="#">待沟通</a>
+									<a id="interviewBtn" href="#">已安排面试</a>
+									<a id="unfitBtn" href="#">不合适</a>
+									<a id="allowBtn" href="#">已录取</a>
+								</li>
+								<li id="workExper">
+									<span class="tt">工作经验：</span>
+									<a href="#" class="active">不限</a>
+									<a href="#">应届毕业生</a>
+									<a href="#">1-2年</a>
+									<a href="#">3-5年</a>
+									<a href="#">5-8年</a>
+									<a href="#">8-10年</a>
+									<a href="#">10年以上</a>
+								</li>
+								<li id="education">
+									<span class="tt">最低学历：</span>
+									<a href="#" class="active">不限</a>
+									<a href="#">大专及以下</a>
+									<a href="#">本科</a>
+									<a href="#">硕士</a>
+									<a href="#">博士及以上</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="unRead" class="unRead">
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								<div class="rightBox">
+									<p>
+										<a href="#" class="u-btn">查看</a>
+									</p>
+									<p>
+										<a href="#" class="u-btn">不合适</a>
+									</p>
+								</div>	
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								<div class="rightBox">
+									<p>
+										<a href="#" class="u-btn">查看</a>
+									</p>
+									<p>
+										<a href="#" class="u-btn">不合适</a>
+									</p>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div id="unCommun" class="unCommun" style="display:none;">
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>
+									<span>三年</span>
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								<div class="rightBox">
+									<p>
+										<a href="#" class="u-btn btn-com">沟通</a>
+									</p>
+									<p>
+										<a href="#" class="u-btn">不合适</a>
+									</p>
+								</div>	
+							</div>
+							<div class="lightBox lightBoxCom" >
+								<div class="lightBoxSub">
+									<form>
+										<p>
+											<label>面试时间：</label>
+											<input type="text">
+										</p>
+										<p>
+											<label>面试地点：</label>
+											<input type="text">
+										</p>
+										<p>
+											<label>联系电话：</label>
+											<input type="text">
+										</p>
+										<p>
+											<input type="submit" value="保存" class="u-btn">
+											<input type="button" value="取消" class="u-btn boxComCancel">
+										</p>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								<div class="rightBox">
+									<p>
+										<a href="#" class="u-btn btn-com">沟通</a>
+									</p>
+									<p>
+										<a href="#" class="u-btn">不合适</a>
+									</p>
+								</div>	
+							</div>
+							<div class="lightBox lightBoxCom" >
+								<div class="lightBoxSub">
+									<form>
+										<p>
+											<label>面试时间：</label>
+											<input type="text">
+										</p>
+										<p>
+											<label>面试地点：</label>
+											<input type="text">
+										</p>
+										<p>
+											<label>联系电话：</label>
+											<input type="text">
+										</p>
+										<p>
+											<input type="submit" value="保存" class="u-btn">
+											<input type="button" value="取消" class="u-btn boxComCancel">
+										</p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="interview" class="interviewArranged" style="display:none;">
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								<div class="rightBox">
+									<p>
+										<a href="#" class="u-btn btn-check">查看面试时间</a>
+									</p>
+									<p>
+										<a href="#" class="u-btn">录取</a>
+									</p>
+									<p>
+										<a href="#" class="u-btn">不合适</a>
+									</p>
+								</div>	
+							</div>
+							<div class="lightBox lightBoxCheck">
+								<div class="lightBoxSub">
+									<form>
+										<p>
+											<label>面试时间：</label>
+											<input type="text">
+										</p>
+										<p>
+											<label>面试地点：</label>
+											<input type="text">
+										</p>
+										<p>
+											<label>联系电话：</label>
+											<input type="text">
+										</p>
+										<p>
+											<input type="submit" value="保存修改" class="u-btn">
+											<input type="button" value="取消" class="u-btn boxCheckCancel">
+										</p>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								<div class="rightBox">
+									<p>
+										<a href="#" class="u-btn btn-check">查看面试时间</a>
+									</p>
+									<p>
+										<a href="#" class="u-btn">录取</a>
+									</p>
+									<p>
+										<a href="#" class="u-btn">不合适</a>
+									</p>
+								</div>	
+							</div>
+						</div>
+						<div class="lightBox lightBoxCheck">
+							<div class="lightBoxSub">
+								<form>
+									<p>
+										<label>面试时间：</label>
+										<input type="text">
+									</p>
+									<p>
+										<label>面试地点：</label>
+										<input type="text">
+									</p>
+									<p>
+										<label>联系电话：</label>
+										<input type="text">
+									</p>
+									<p>
+										<input type="submit" value="保存修改" class="u-btn">
+										<input type="button" value="取消" class="u-btn boxCheckCancel">
+									</p>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="unfitable" class="unfitable" style="display:none;">
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								<a href="#" class="u-btn">重审</a>
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								<a href="#" class="u-btn">重审</a>
+							</div>
+						</div>
+					</div>
+					<div id="allowed" class="allowed" style="display:none;">
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								
+							</div>
+						</div>
+						<div class="detailBox">
+							<div class="left">
+								<img src="../src/img/dashboard/logo.png" alt="logo">
+							</div>
+							<div class="mid">
+								<p>
+									<span>易大师</span>/
+									<span>三年</span>/
+									<span>海口</span>
+								</p>
+								<p>
+									<a href="#">附件简历：点击查看更多信息</a>
+								</p>
+							</div>
+							<div class="right">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft">
+		<div>
+			<!-- 公司落款 -->
+		</div>
+	</div>
+	<script type="text/javascript" src="../src/js/base.js"></script>
+	<script type="text/javascript">
+	//控制items的class
+	var profileState = $('profileState');
+	var workExper = $('workExper');
+	var education = $('education');
+	var profileStates = profileState.getElementsByTagName('a');
+	var workExpers = workExper.getElementsByTagName('a');
+	var educations = education.getElementsByTagName('a');
+	function stateSelectHandler (i,items) {
+		return function(){
+			for (var j = 0; j < items.length; j++) {
+				items[j].className = '';
+			}
+			items[i].className = 'active';
+		}
+	}
+	function changeCrt (items) {
+		for (var i = 0; i < items.length; i++) {
+			var stateSelect = stateSelectHandler(i,items);
+			addEvent(items[i],'click',stateSelect,false);
+		}
+	}
+	changeCrt(profileStates);
+	changeCrt(workExpers);
+	changeCrt(educations);
+	//控制filter
+	var unreadBtn = $('unreadBtn');
+	var unComuBtn = $('unComuBtn');
+	var interviewBtn = $('interviewBtn');
+	var unfitBtn = $('unfitBtn');
+	var allowBtn = $('allowBtn');
+
+	var collection = [];
+	var unRead = $('unRead');
+	collection.push(unRead);
+	var unCommun = $('unCommun');
+	collection.push(unCommun);
+	var interview = $('interview');
+	collection.push(interview);
+	var unfitable = $('unfitable');
+	collection.push(unfitable);
+	var allowed = $('allowed');
+	collection.push(allowed);
+	//
+	function changeBox (elm,div) {
+		elm.onclick = function(){
+		for (var i = 0; i < collection.length; i++) {
+			collection[i].style.display = 'none';
+		}
+		div.style.display = 'block';
+		}
+	}
+	changeBox(unreadBtn,unRead);
+	changeBox(unComuBtn,unCommun);
+	changeBox(interviewBtn,interview);
+	changeBox(unfitBtn,unfitable);
+	changeBox(allowBtn,allowed);
+	//出现lightBox
+	var btnCheck = getElementsByClassName('btn-check',interview);
+	var btnCom = getElementsByClassName('btn-com',unCommun);
+	var lightBoxCheck = getElementsByClassName('lightBoxCheck',interview);
+	var lightBoxCom = getElementsByClassName('lightBoxCom',unCommun);
+	var boxComCancel;
+	var boxCheckCancel;
+	// function cancelCheckHandeler (i) {
+	// 	return function(){
+	// 		lightBoxCheck[i].style.display = 'none';
+	// 	}
+	// }
+	function checkHandeler (i) {
+		return function(){
+			lightBoxCheck[i].style.display = 'block';
+			boxCheckCancel = getElementsByClassName('boxCheckCancel',interview);
+			boxCheckCancel[i].onclick = function(){
+				lightBoxCheck[i].style.display = 'none';
+			}
+		}
+	}
+
+	for (var i = 0; i < btnCheck.length; i++) {
+		var check = checkHandeler(i);
+		btnCheck[i].onclick = check;		
+	}
+
+	function comHandeler (i) {
+		return function(){
+			lightBoxCom[i].style.display = 'block';
+			boxComCancel = getElementsByClassName('boxComCancel',unCommun);
+			boxComCancel[i].onclick = function(){
+				lightBoxCom[i].style.display = 'none';
+			}
+		}
+	}
+
+	for (var i = 0; i < btnCheck.length; i++) {
+		var com = comHandeler(i);
+		btnCom[i].onclick = com;		
+	}
+	</script>
+</body>
+</html>

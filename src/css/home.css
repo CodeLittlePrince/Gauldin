@@ -1,0 +1,71 @@
+*{margin: 0; padding: 0;}
+.g-hd{height: 70px; background: #3399cc; }
+.g-bd .g-mn-1{position: relative; height: 450px; background-color: #5faef0;}
+.g-bd .g-mn-2{position: relative; height: 450px; background-color: #fff;}
+.g-bd .g-mn-3{position: relative; height: 450px; background-color: #f1f1f1;}
+.g-bd .g-mn-4{position: relative; height: 450px; background-color: #fff;}
+.g-ft{height: 100px; background-color: #3399cc;}
+.u-bt{width: 100px; height: 40px;  border-radius: 5px; border: none;  font-size: 14px; line-height: 40px; color: #fff;}
+.u-bt a{display: inline-block; *display: inline; *zoom: 1; width: 100px; height: 40px;}
+.u-bt:hover{color: #ccc;}
+.g-hd .g-sd{float: left; width: 200px; height: 70px;}
+.g-hd .logo{padding: 5px 0 5px 30px;}
+.g-hd .g-mn{height: 70px;}
+.g-hd .g-sdr{float: right; width: 150px; margin: 20px;}
+.m-nav{margin:0 auto; width: 400px;}
+.m-nav .menu ul{list-style-type: none; height: 70px;} 
+.m-nav .menu ul>li{float: left; height: 70px;}
+.m-nav .menu ul>li>a{display: inline-block; *display: inline; *zoom: 1; height: 70px; font-size: 20px; line-height: 70px; text-decoration: none; color: #fff; padding: 0 20px;}
+.m-nav .menu ul>li>a:hover{height: 65px; color: #111; border-bottom: 5px solid #3366ff;}
+.u-log{float: left;}
+.u-log button{width: 60px; height: 30px; font-size: 14px; color: #fff; border:none; border-radius: 5px; background-color: black;}
+.u-reg{float: left;}
+.u-reg button{width: 60px; height: 30px; font-size: 14px; color: #fff; margin-left: 10px; border:none; border-radius: 5px; background-color: black;}
+
+.g-bd .g-mn-1 .mn{width: 500px; height: 300px; margin: 0 auto;}
+.g-bd .g-mn-1 img{margin-top: 80px;}
+
+.g-mn-2 .tt{position: absolute; left: 45%; top: 50px; text-align: center;} 
+.g-mn-2 .tt h2{font-size: 20px; line-height: 30px; color: #299bd9; }
+.g-mn-2 .info-lst{position: absolute; right: 30%; top: 150px;}
+.m-lst{font-size: 16px; line-height: 20px;}
+.m-lst span{display: inline-block; *display: inline; *zoom: 1; width: 10px; height: 10px; border-radius: 50%; background-color: #299bd9; margin-right: 5px;}
+.g-mn-2 .bt{background-color: #299bd9; margin-top: 50px;}
+.g-mn-2 img{position: absolute; left: 20%; top: 120px;}
+
+.g-mn-3 .tt{position: absolute; left: 45%; top: 50px; text-align: center;}
+.g-mn-3 .tt h2{font-size: 20px; line-height: 30px; color: green; }
+.g-mn-3 .info-lst{position: absolute; left: 20%; top: 150px;}
+.g-mn-3 .bt{background-color: green; margin-top: 50px;}
+.g-mn-3 img{position: absolute; right: 30%; top: 120px;}
+.g-mn-3 .m-lst span{background-color: green;}
+
+.g-mn-4 .tt{position: absolute; left: 45%; top: 50px; text-align: center;}
+.g-mn-4 .tt h2{font-size: 20px; line-height: 30px; color: #fa8454; }
+.g-mn-4 .info-lst{position: absolute; right: 30%; top: 150px;}
+.g-mn-4 .bt{background-color: #fa8454; margin-top: 50px;}
+.g-mn-4 img{position: absolute; left: 20%; top: 120px;}
+.g-mn-4 .m-lst span{background-color: #fa8454;}
+
+.g-mn .m-nav #burger{position: relative; height: 70px; padding-top: 20px; float: right;}
+.u-burger{display: inline-block; *display: inline; *zoom: 1; border-radius: 3px; padding: 3px; cursor: pointer;}
+.u-burger i{display: block; width: 25px; height: 4px; margin: 3px auto; border-radius: 2px; background-color: #111;}
+.g-mn .m-nav .hd-menu ul{position: absolute; z-index: 999; left: -90px; width: 120px; list-style-type: none; background-color: #fff;} 
+.g-mn .m-nav .hd-menu ul>li{height: 50px; padding-left: 10px;}
+.g-mn .m-nav .hd-menu ul>li:hover{background-color: #f5f2f2;}
+.g-mn .m-nav .hd-menu ul>li>a{display: inline-block; *display: inline; *zoom: 1; width: 120px; font-size: 20px; line-height: 50px; text-decoration: none; color: #111;}
+
+.g-mn .m-nav .menu{display: block;}
+.g-mn .m-nav #burger{display: none;}
+@media screen and (max-width:959px) and (min-width: 480px){
+      .g-mn .m-nav .menu{display: none;}
+      .g-mn .m-nav #burger{display: block;}
+      .g-mn-2 .info-lst{position: absolute; right: 10%; top: 150px;}
+      .g-mn-2 img{position: absolute; left: 5%; top: 120px;}
+      .g-mn-3 .info-lst{position: absolute; left: 5%; top: 150px;}
+      .g-mn-3 .bt{background-color: green; margin-top: 50px;}
+      .g-mn-3 img{position: absolute; right: 10%; top: 120px;}
+      .g-mn-4 .info-lst{position: absolute; right: 10%; top: 150px;}
+      .g-mn-4 .bt{background-color: #fa8454; margin-top: 50px;}
+      .g-mn-4 img{position: absolute; left: 5%; top: 120px;}
+}

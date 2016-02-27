@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>recruitment-search</title>
+	<link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/home.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/recruitment-search.css">
+</head>
+<body>
+	<div class="fixed">
+		<div id="top" class="g-hd clearfix">
+			<div class="g-sd">
+				<div class="logo">
+					<a class="logo" href="Gauldin.html"><img src="../src/img/homePage/logo.png"></a>
+				</div>
+			</div>
+			<div class="g-sdr">
+				<div class="u-log">
+					<a href="login.html">
+						<button type="button">登录</button>
+					</a>			
+				</div>
+				<div class="u-reg">		
+					<a href="#">
+						<button type="button">注册</button>
+					</a>		
+				</div>
+			</div>
+			<div class="g-mn">
+				<div class="m-nav">
+					<div class="menu" >
+						<ul>
+							<li><a href="Gauldin.html">首页</a></li>
+							<li><a href="recruitment.html">招聘</a></li>
+							<li><a href="#">职业规划</a></li>
+							<li><a href="#">创业孵化</a></li>
+						</ul>
+					</div>
+					<div id="burger" >
+						<span class="u-burger">
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>
+						<div id="hd-menu" class="hd-menu" style="display:none;">
+							<ul>
+								<li><a href="Gauldin.html">首页</a></li>
+								<li><a href="recruitment.html">招聘</a></li>
+								<li><a href="#">职业规划</a></li>
+								<li><a href="#">创业孵化</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="g-bd">
+		<div class="search">
+			<!-- 搜索 -->
+			<div class="m-searchbar clearfix">
+				<div class="inputText">
+					<!-- Searchbar -->
+					<input class="input" type="text" placeholder="请输入职位名称或公司名称">
+				</div>
+				<a class="submit" href="recruitment-search.html">搜索</a>
+			</div>		
+			<div class="tab-range">
+				<a class="z-crt" href="#" id="tabPos">
+					职位(
+					<span>500+</span>
+					)
+				</a>
+				<a href="#" id="tabComp">
+					公司(
+					<span>0</span>
+					)
+				</a>
+			</div>
+		</div>
+		<div class="content clearfix">
+			<div class="g-sd">
+				<div class="top">
+					<div id="filter" class="filter">
+						<!-- 过滤 -->
+						<div class="filterBox">
+							<ul>
+								<li class="Items brefItems">
+									<span class="tt">工作地点：</span>
+									<a href="javascript:;" class="active">全国</a>
+									<span class="tt">工作经验：</span>
+									<a href="javascript:;" class="active">不限</a>
+									<span class="tt">学历要求：</span>
+									<a href="javascript:;" class="active">不限</a>
+									<span class="tt">公司阶段：</span>
+									<a href="javascript:;" class="active">不限</a>
+									<span class="tt">行业领域：</span>
+									<a href="javascript:;" class="active">不限</a>
+								</li>
+							</ul>
+							
+							<div class="Items detailItems">
+								<div id="all-city" class="all-city">
+									<div class="has-more">
+										<ul>
+											<li>
+												<!-- 注意：a查询的地址是带查询参数的url地址 -->
+												<span class="tt">工作地点：</span>
+												<a class="active" href="#">全国</a>  
+												<a href="#">北京</a>
+												<a href="#">上海</a>
+												<a href="#">深圳</a>
+												<a href="#">广州</a>
+												<a href="#">杭州</a>
+												<a href="#">成都</a>
+												<a href="#">南京</a>
+												<a href="#">武汉</a>
+												<a href="#">西安</a>
+												<a href="#">厦门</a>
+												<a href="#">长沙</a>
+												<a href="#">苏州</a>
+												<a href="#">天津</a>
+												<span id="btn-more-position" class="u-btn-more" style="padding:5px; cursor:pointer;">
+													更多
+													<i></i>
+												</span>
+											</li>
+										</ul>
+										<div class="more morePositions">
+											<ul>
+												<li>
+													<a href="#">重庆</a>
+													<a href="#">郑州</a>
+													<a href="#">青岛</a>
+													<a href="#">合肥</a>
+													<a href="#">福州</a>
+													<a href="#">济南</a>
+													<a href="#">大连</a>
+													<a href="#">珠海</a>
+													<a href="#">无锡</a>
+													<a href="#">佛山</a>
+													<a href="#">东莞</a>
+													<a href="#">宁波</a>
+													<a href="#">常州</a>
+													<a href="#">沈阳</a>
+													<a href="#">石家庄</a>
+													<a href="#">昆明</a>
+													<a href="#">南昌</a>
+													<a href="#">南宁</a>
+													<a href="#">哈尔滨</a>
+													<a href="#">海口</a>
+													<a href="#">中山</a>
+													<a href="#">惠州</a>
+													<a href="#">贵阳</a>
+													<a href="#">长春</a>
+													<a href="#">太原</a>
+													<a href="#">嘉兴</a>
+													<a href="#">泰安</a>
+													<a href="#">昆山</a>
+													<a href="#">烟台</a>
+													<a href="#">兰州</a>
+													<a href="#">泉州</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+								<ul>									
+									<li id="exp" class="exp">
+										<span class="tt">工作经验：</span>
+										<a class="active" href="#">不限</a>
+										<a href="#">应届毕业生</a>
+										<a href="#">1年以下</a>
+										<a href="#">1-3年</a>
+										<a href="#">3-5</a>
+										<a href="#">5-10</a>
+										<a href="#">10年以上</a>
+									</li>
+									<li id="degree" class="degree">
+										<span class="tt">学历要求：</span>
+										<a class="active" href="#">不限</a>
+										<a href="#">大专</a>
+										<a href="#">本科</a>
+										<a href="#">硕士</a>
+										<a href="#">博士</a>
+									</li>
+									<li id="incSta" class="incSta">
+										<span class="tt">公司阶段：</span>
+										<a class="active" href="#">不限</a>
+										<a href="#">初创型</a>
+										<a href="#">成长型</a>
+										<a href="#">成熟型</a>
+										<a href="#">已上市</a>
+									</li>
+								</ul>
+								<div id="field" class="field">
+									<div class="has-more">
+										<ul>
+											<li>
+												<span class="tt">行业领域：</span>
+												<a class="active" href="#">不限</a>
+												<a href="#">移动物联网</a>
+												<a href="#">电子商务</a>
+												<a href="#">金融</a>
+												<a href="#">企业服务</a>
+												<a href="#">教育</a>
+												<a href="#">文化娱乐</a>
+												<a href="#">游戏</a>
+												<a href="#">O2O</a>
+												<a href="#">硬件</a>
+												<span id="btn-more-field" class="u-btn-more" style="padding:5px; cursor:pointer;">
+													更多
+													<i></i>
+												</span>
+											</li>
+										</ul>
+										<div class="more moreFields">
+											<ul>
+												<li>
+													<a href="#">社交网络</a>
+													<a href="#">旅游</a>
+													<a href="#">医疗健康</a>
+													<a href="#">生活服务</a>
+													<a href="#">信息安全</a>
+													<a href="#">数据服务</a>
+													<a href="#">广告营销</a>
+													<a href="#">分类信息</a>
+													<a href="#">招聘</a>
+													<a href="#">其他</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div  class="collapseControl">
+							<a href="javascript:;" id="btn-callapse" class="u-btn-collapse" title="点击收起筛选项"></a>
+						</div>
+						<div class="sort">
+							<!-- 筛选 -->	
+							<ul>
+								<li>
+									<span class="tt">排序方式：</span>
+									<a href="#" class="active">默认</a>
+									<a href="#">最新</a>
+								</li>
+								<li>
+									<div class="salaryItem">
+										<span class="tt">月薪:</span>
+										<!-- <select name="salaryRange" id="salaryRange" class="salaryRange">
+											<option value="all">不限</option>
+											<option value="2k-">2k以下</option>
+											<option value="2k-5k">2k-5k</option>
+											<option value="5k-10k">5k-10k</option>
+											<option value="10k-15k">10k-15k</option>
+											<option value="15k-25k">15k-25k</option>
+											<option value="25k-50k">25k-50k</option>
+											<option value="50k+">50k以上</option>
+										</select> -->
+										<div id="salaryItem" class="m-select-filter">
+											<span>不限</span>
+											<i></i>
+											<ul style="display:none;">
+												<li><a href="">不限</a></li>
+												<li><a href="">2k以下</a></li>
+												<li><a href="">2k-5k</a></li>
+												<li><a href="">5k-10k</a></li>
+												<li><a href="">10k-15k</a></li>
+												<li><a href="">15k-25k</a></li>
+												<li><a href="">25k-50k</a></li>
+												<li><a href="">50k以上</a></li>
+											</ul>
+										</div>
+									</div>
+									
+								</li>
+								<li>
+									<div class="typeItem">
+										<span class="tt">工作性质:</span>
+										<!-- <select name="positionProperty" id="positionProperty" class="postionProperty">
+											<option value="all">全职</option>
+											<option value="full-time">全职</option>
+											<option value="part-time">兼职</option>
+											<option value="intern">实习</option>
+										</select> -->
+										<div id="typeItem" class="m-select-filter" >
+											<span>不限</span>
+											<i></i>
+											<ul style="display:none;">
+												<li><a href="">不限</a></li>
+												<li><a href="">全职</a></li>
+												<li><a href="">兼职</a></li>
+												<li><a href="">实习</a></li>
+											</ul>
+										</div>
+									</div>
+									
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mid">
+					<div class="pstLst">
+						<!-- 职位列表 -->
+						<div id="hotList" class="hotList">
+						<ul>
+							<li>
+								<div class="top clearfix">
+									<div class="topLft">
+										<div class="jobName">
+											<h2 class="fl">
+												<a href="#">Android工程师[北京]</a>
+												<span class="fl">2015-11-05</span>
+											</h2>
+										</div>
+										<div>
+											<span class="salary fl">20K-30K</span>
+											<span>经验3-5年</span>
+											" / "
+											<span>学历不限</span>
+										</div>
+									</div>
+									<div class="topRght">
+										<div class="incName"><a href="#">LeanCloud</a></div>
+										<div class="incClass">
+											<span>移动互联网·企业服务</span>
+											" / "
+											<span>成长型(A轮)</span>
+										</div>
+									</div>
+								</div>
+								<div class="foot clearfix">
+									<div class="footLft">"硅谷团队 优质环境 和谐氛围"</div>
+									<div class="footRght">
+										<span>股票期权</span>
+										<span>带薪年假</span>
+										<span>六险一金</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="top clearfix">
+									<div class="topLft">
+										<div class="jobName">
+											<h2 class="fl">
+												<a href="#">Android工程师[北京]</a>
+												<span class="fl">2015-11-05</span>
+											</h2>
+										</div>
+										<div>
+											<span class="salary fl">20K-30K</span>
+											<span>经验3-5年</span>
+											" / "
+											<span>学历不限</span>
+										</div>
+									</div>
+									<div class="topRght">
+										<div class="incName"><a href="#">LeanCloud</a></div>
+										<div class="incClass">
+											<span>移动互联网·企业服务</span>
+											" / "
+											<span>成长型(A轮)</span>
+										</div>
+									</div>
+								</div>
+								<div class="foot clearfix">
+									<div class="footLft">"硅谷团队 优质环境 和谐氛围"</div>
+									<div class="footRght">
+										<span>股票期权</span>
+										<span>带薪年假</span>
+										<span>六险一金</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="simiSearch">
+						<!-- 相关搜索 -->
+						<p>相关搜索：</p>
+						<p>
+							<a href="#">技术经理</a>
+							<a href="#">项目经理</a>
+							<a href="#">项目总监</a>
+							<a href="#">项目管理</a>
+							<a href="#">高级项目经理</a>
+						</p>
+					</div>
+				</div>
+				<div class="foot">
+					<div class="chgPage">
+						<!-- 翻页 -->
+						<a href="#" class="pre">上一页</a>
+						<a href="#" class="pagenum active">1</a>
+						<a href="#" class="pagenum">2</a>
+						<a href="#" class="next">下一页</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="g-mn">
+			<div class="history">
+			<!-- 最近浏览	 -->
+				<h2>最近游览过</h2>
+				<ul>
+					<li>
+						<a href="#" target="_blank" class="jName">Andoid工程师</a>
+						<p class="salary">20k-35k</p>
+						<p class="incName">和创科技</p>
+					</li>
+					<li>
+						<a href="#" target="_blank" class="jName">前端开发</a>
+						<p class="salary">25k-50k</p>
+						<p class="incName">蘑菇街</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft">
+		<div>
+			<!-- 公司落款 -->
+		</div>
+	</div>
+	<a class="rocket" href="#top"></a>
+	<script type="text/javascript" src="../src/js/base.js"></script>
+	<script type="text/javascript">
+	var btnMorePosition = $('btn-more-position');
+	var btnMoreField = $('btn-more-field');
+	var moreField = $('btn-more-field');
+	var filter = $('filter');
+	var hasMore = getElementsByClassName('has-more', filter);
+	var morePositions = getElementsByClassName('morePositions', filter);
+	var moreFields = getElementsByClassName('moreFields', filter);
+
+	btnMorePosition.onmouseover = function(e){
+		hasMore[0].style.cssText = 'background-color: #fff;';
+		morePositions[0].style.display = 'block';
+	}
+	morePositions[0].onmouseleave = function(e){
+		hasMore[0].style.cssText = 'background-color: ;';
+		morePositions[0].style.display = 'none';
+	}
+	btnMoreField.onmouseover = function(e){
+		hasMore[1].style.cssText = 'background-color: #fff;';
+		moreFields[0].style.display = 'block';
+	}
+	moreFields[0].onmouseleave = function(e){
+		hasMore[1].style.cssText = 'background-color: ;';
+		moreFields[0].style.display = 'none';
+	}
+
+	var btnCallapse = $('btn-callapse');
+	var brefItems = getElementsByClassName('brefItems', filter);
+	var detailItems = getElementsByClassName('detailItems', filter);
+	var collapsed = false;
+	btnCallapse.onclick = function(){
+		if(!collapsed){
+			detailItems[0].style.display = 'none';
+			brefItems[0].style.display = 'block';
+			collapsed = true;
+		}
+		else{
+			detailItems[0].style.display = 'block';
+			brefItems[0].style.display = 'none';
+			collapsed = false;
+		}
+
+	}
+	//active
+	var allCity = $('all-city');
+	var exp = $('exp');
+	var degree = $('degree');
+	var incSta = $('incSta');
+	var field = $('field');
+	var allCitys = allCity.getElementsByTagName('a');
+	var exps = exp.getElementsByTagName('a');
+	var degrees = degree.getElementsByTagName('a');
+	var incStas = incSta.getElementsByTagName('a');
+	var fields = field.getElementsByTagName('a');
+
+	function stateSelectHandler (i,items) {
+		return function(){
+			for (var j = 0; j < items.length; j++) {
+				items[j].className = '';
+			}
+			items[i].className = 'active';
+		}
+	}
+	function changeCrt (items) {
+		for (var i = 0; i < items.length; i++) {
+			var stateSelect = stateSelectHandler(i,items);
+			addEvent(items[i],'click',stateSelect,false);
+		}
+	}
+	changeCrt(allCitys);
+	changeCrt(exps);
+	changeCrt(degrees);
+	changeCrt(incStas);
+	changeCrt(fields);
+
+	//控制filter的下拉
+	var isCaptureSala = false;
+	var isCaptureType = false;
+	var typeItem = $("typeItem");
+	var salaryItem = $("salaryItem");
+	var typeItemUl = typeItem.getElementsByTagName('ul');
+	var salaryItemUl = salaryItem.getElementsByTagName('ul');
+
+	salaryItem.onclick = function(event){
+		if(isCaptureSala == false){
+			salaryItemUl[0].style.display = 'block';
+			isCaptureSala = true;
+		}
+		else{
+			salaryItemUl[0].style.display = 'none';
+			isCaptureSala = false;
+		}
+		var event = event||window.event;     //兼容stop冒泡
+		if(event.stopPropagation){
+			event.stopPropagation();
+		}
+		else{
+			event.cancelBubble = true;
+		}
+	}
+	typeItem.onclick = function(event){
+		if(isCaptureType == false){
+			typeItemUl[0].style.display = 'block';
+			isCaptureType = true;
+		}
+		else{
+			typeItemUl[0].style.display = 'none';
+			isCaptureType = false;
+		}
+		var event = event||window.event;
+		if(event.stopPropagation){
+			event.stopPropagation();
+		}
+		else{
+			event.cancelBubble = true;
+		}	
+	}
+
+	document.onclick = function(){
+		if(isCaptureSala == true){
+			salaryItemUl[0].style.display = 'none';
+			isCaptureSala = false;
+		}
+		if(isCaptureType == true){
+			typeItemUl[0].style.display = 'none';
+			isCaptureType = false;
+		}
+	}
+
+	</script>
+	<script src="../src/js/jquery-1.11.3.min.js"></script>
+	<script src="../src/js/jquery.placeholder.min.js"></script>
+	<script src="../src/js/placeholder.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/home.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/dashboard-base.css">
+	<title>dashboard-2</title>
+	<style type="text/css">
+	.g-bd .g-mn .detailBox .b-sdl{float: left; margin-right: 15px; border: 1px solid #ccc;}
+	.g-bd .g-mn .detailBox .b-sd .inc{margin-top: 15px; margin-left: 2px;}
+	.g-bd .g-mn .detailBox .b-sd p{margin-top: 15px;}
+	.g-bd .g-mn .detailBox .b-mn .publishTime{margin-bottom: 32px;}
+	.g-bd .g-mn .detailBox .b-ft textarea{width: 530px; height: 98px; margin-left: 70px; margin-top: 20px; padding: 10px;}
+	.g-bd .g-mn .detailBox .b-ft .submit a{display: inline-block; *display: inline; *zoom: 1; padding: 8px 45px; background-color: #6599ff; font-size: 18px; color: #fff; border-radius: 1px; margin-left: 495px; margin-top: 20px;}
+	.g-bd .g-mn .detailBox .b-ft .commentDetail{margin-top: 30px;}
+	.g-bd .g-mn .detailBox .b-ft .commentDetail img{float: left; margin-right: 20px; width: 40px; height: 40px; border: 3px solid #ccc; border-radius: 50%;}
+	.g-bd .g-mn .detailBox .b-ft .commentDetail p{padding-top: 13px;}
+	.g-bd .g-mn .detailBox .b-ft .subComment{margin: 10px;}
+	.g-bd .g-mn .detailBox .b-ft .subComment .publisher-thumb{width: 40px; height: 40px; border: 3px solid #ccc; border-radius: 50%;}
+	</style>
+</head>
+<body>
+	<div class="fixed">
+		<div id="top" class="g-hd clearfix">
+			<div class="g-sd">
+				<div class="logo">
+					<a class="logo" href="Gauldin.html"><img src="../src/img/homePage/logo.png"></a>
+				</div>
+			</div>
+			<div class="g-sdr">
+				<div class="u-log">
+					<a href="login.html">
+						<button type="button">登录</button>
+					</a>			
+				</div>
+				<div class="u-reg">		
+					<a href="#">
+						<button type="button">注册</button>
+					</a>		
+				</div>
+			</div>
+			<div class="g-mn">
+				<div class="m-nav">
+					<div class="menu" >
+						<ul>
+							<li><a href="Gauldin.html">首页</a></li>
+							<li><a href="recruitment.html">招聘</a></li>
+							<li><a href="#">职业规划</a></li>
+							<li><a href="#">创业孵化</a></li>
+						</ul>
+					</div>
+					<div id="burger" >
+						<span class="u-burger">
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>
+						<div id="hd-menu" class="hd-menu" style="display:none;">
+							<ul>
+								<li><a href="Gauldin.html">首页</a></li>
+								<li><a href="recruitment.html">招聘</a></li>
+								<li><a href="#">职业规划</a></li>
+								<li><a href="#">创业孵化</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mid">
+		<div class="g-bd">
+			<div class="fixed">
+				<div class="g-sd">
+					<div class="tt">
+						<h3>个人中心</h3>
+					</div>
+					<div class="category">
+						<ul>
+							<li><a href="user-dashboard-4.html">简历预览<i class="self-icon">&#xe908;</i></a></li>
+							<li><a href="user-dashboard-4.html">基本信息</a></li>
+							<li><a href="user-dashboard-4.html#workExp">工作经历</a></li>
+							<li><a href="user-dashboard-4.html#selfDesc">自我描述</a></li>
+						</ul>
+						<ul>
+							<li><a href="user-dashboard-3.html">简历投递状态</a></li>
+							<li><a href="">投递成功</a></li>
+							<li><a href="">被查看</a></li>
+							<li><a href="">待沟通</a></li>
+							<li><a href="">通知面试</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">面试评价</a></li>
+						</ul>
+						<ul>
+							<li><a href="user-dashboard-1.html">我收藏的职位</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="g-mn" class="g-mn">
+				<div class="subTt">
+					<!-- 面试评价 -->
+					<label>面试评价</label>
+				</div>
+				<div class="subDetail">
+					<!-- 细节 -->
+					<div class="detailBox">
+						<div class="b-sdl">
+							<img src="../src/img/recruitment/sm-thumb-1.jpg" width="50" alt="companyLogo">
+						</div>
+						<div class="b-sd">
+							<a href="#" class="position">市场规划</a>
+							<div class="inc">
+								<a>海南微软创新中心</a>
+							</div>
+							<p>
+								<span>海南</span>
+								<span>本科</span>
+								<span>经验不限</span>
+								<span>2K-5K</span>
+							</p>
+						</div>
+						<div class="b-mn">
+							<p class="publishTime">
+								<span>发布时间：</span>
+								<span class="time">2015/11/18  </span>
+							</p>
+							<a href="javascript:;" class="sendProfile btn-comment">评价</a>
+						</div>
+						<div class="b-ft hasSub z-hidden">
+							<div class="comment">
+								<textarea></textarea>
+							</div>
+							<div class="submit">
+								<a href="javascript:;">提交</a>
+							</div>						
+						</div>
+					</div>
+					<div class="detailBox">
+						<div class="b-sdl">
+							<img src="../src/img/recruitment/sm-thumb-1.jpg" width="50" alt="companyLogo">
+						</div>
+						<div class="b-sd">
+							<a href="#" class="position">市场规划</a>
+							<div class="inc">
+								<a>海南微软创新中心</a>
+							</div>
+							<p>
+								<span>海南</span>
+								<span>本科</span>
+								<span>经验不限</span>
+								<span>2K-5K</span>
+							</p>
+						</div>
+						<div class="b-mn">
+							<p class="publishTime">
+								<span>发布时间：</span>
+								<span class="time">2015/11/18  </span>
+							</p>
+							<a href="javascript:;" class="sendProfile btn-comment">评价</a>
+						</div>
+						<div class="b-ft hasSub z-hidden">
+							<div class="comment">
+								<textarea></textarea>
+							</div>
+							<div class="submit">
+								<a href="javascript:;">提交</a>
+							</div>						
+						</div>
+					</div>
+					<div class="detailBox">
+						<div class="b-sdl">
+							<img src="../src/img/recruitment/sm-thumb-1.jpg" width="50" alt="companyLogo">
+						</div>
+						<div class="b-sd">
+							<a href="#" class="position">市场规划</a>
+							<div class="inc">
+								<a>海南微软创新中心</a>
+							</div>
+							<p>
+								<span>海南</span>
+								<span>本科</span>
+								<span>经验不限</span>
+								<span>2K-5K</span>
+							</p>
+						</div>
+						<div class="b-mn">
+							<p class="publishTime">
+								<span>发布时间：</span>
+								<span class="time">2015/11/18  </span>
+							</p>
+							<a href="javascript:;" class="sendProfile z-expired">已评价</a>
+						</div>
+						<div class="b-ft">
+							<div class="commentDetail">
+								<img src="../src/img/recruitment/dog.jpg" alt="thumb" class="thumb">
+								<p>面试官很热情，不错的公司</p>
+								<div class="subComment">
+									<img src="../src/img/recruitment/sm-thumb-1.jpg" alt="publisher-thumb" class="publisher-thumb">
+									<p>您的快递收到了吗？亲~</p>
+								</div>
+							</div>
+						</div>
+					</div><div class="detailBox">
+						<div class="b-sdl">
+							<img src="../src/img/recruitment/sm-thumb-1.jpg" width="50" alt="companyLogo">
+						</div>
+						<div class="b-sd">
+							<a href="#" class="position">市场规划</a>
+							<div class="inc">
+								<a>海南微软创新中心</a>
+							</div>
+							<p>
+								<span>海南</span>
+								<span>本科</span>
+								<span>经验不限</span>
+								<span>2K-5K</span>
+							</p>
+						</div>
+						<div class="b-mn">
+							<p class="publishTime">
+								<span>发布时间：</span>
+								<span class="time">2015/11/18  </span>
+							</p>
+							<a href="javascript:;" class="sendProfile z-expired">已评价</a>
+						</div>
+						<div class="b-ft">
+							<div class="commentDetail">
+								<img src="../src/img/recruitment/dog.jpg" alt="thumb" class="thumb">
+								<p>Fuck</p>
+								<!-- <div class="subComment">
+									<img src="../src/img/recruitment/sm-thumb-1.jpg" alt="publisher-thumb" class="publisher-thumb">
+									<p>您的快递收到了吗？亲~</p>
+								</div> -->
+							</div>			
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft">
+		<div>
+			<!-- 公司落款 -->
+		</div>
+	</div>
+	<script type="text/javascript" src="../src/js/base.js"></script>
+	<script type="text/javascript">
+	var gmn = $('g-mn');
+	var btnComment = getElementsByClassName('btn-comment',gmn);
+	var hasSub = getElementsByClassName('hasSub',gmn);
+	var hidden = true;
+	function foo (i) {
+		return function(){
+			if(hidden){
+				hasSub[i].style.display = 'block';
+				hidden = false;
+				btnComment[i].textContent = '取消';
+			}
+			else{
+				hasSub[i].style.display = 'none';
+				hidden = true;
+				btnComment[i].textContent = '评价';
+			}
+		}	
+	}
+	for (var i = 0; i < btnComment.length; i++) {
+		var hoo = foo(i);
+		btnComment[i].onclick = hoo;
+	}
+	</script>
+</body>
+</html>

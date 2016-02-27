@@ -1,0 +1,60 @@
+.g-bd .search{height: 130px; background-color: #e5e5e5; padding-left: 75px; padding-top: 30px;}
+.g-bd .search .inputText{float: left;}
+.g-bd .search .submit{width: 130px; height: 37px;background-color: #347fe5;}
+.g-bd .search .submit:hover{background-color: #2c42e7;}
+.g-bd .tab-range{margin-top: 20px;}
+.g-bd .tab-range a{text-align: center; display: inline-block; *display: inline; *zoom: 1; margin-right: 10px; height: 30px; padding: 0 20px; color: #111;}
+.g-bd .tab-range span{font-size: 16px; line-height: 30px; border-radius: 3px;}
+.g-bd .tab-range .z-crt{background-color: #347fe5; color: #fff;}
+.g-bd .content{margin: 0 auto; width: 1230px; height: 900px;}
+.g-bd .content .g-sd{float: left; width: 926px; padding: 6px 16px; margin-right: 30px;}
+.filter .Items{width: 916px; margin-top: 30px; padding: 10px 0; background-color: #fafafa; font-size: 14px; border: 1px solid #ccc; border-radius: 1px;}
+.filter .brefItems{display: none;}
+.filter .filterBox .brefItems span{margin-left: 20px;}
+.filter .salaryItem{position: relative;}
+.filter .tt{font-weight: bold; margin-right: 5px;}
+.filter .salaryItem .m-select-filter{float: right;}
+.filter .typeItem .m-select-filter{float: right;}
+.filter a{display: inline-block; *display: inline; *zoom: 1; padding: 5px 8px; }
+.filter .active{background-color: #6899ff; color: #fff; border-radius: 2px;}
+.filter .filterBox .detailItems{position: relative;}
+.filter .filterBox .detailItems .more{display: none; position: absolute; z-index: 999; left: -1px; width: 916px; background-color: #fff; border: 1px solid #ccc; border-top: 1px dashed #ccc;}
+.filter .filterBox .detailItems li{margin:10px 20px 0 20px;}
+.filter .filterBox .detailItems .has-more .z-crt{background-color: #fff; display: block;}
+.filter .filterBox .detailItems .u-btn-more{position: absolute; right: 25px;}
+.filter .sort{width: 896px; padding: 10px 0 10px 20px; background-color: #fafafa; font-size: 14px; border: 1px solid #ccc; border-radius: 1px;} 
+.filter .sort li{display: inline-block; *display: inline; *zoom: 1; margin-right: 50px;}
+.g-bd .content .g-sd .collapseControl{position: relative; height: 30px;}
+.g-bd .content .g-sd .collapseControl a{position: absolute; display: inline-block; *display: inline; *zoom: 1; top: -1px; left: 450px; width: 26px; height: 7px;
+	background: #fafafa url(../img/recruitment-search/arrow_down.png) center no-repeat;
+	border: 1px solid #ccc; border-top: 1px solid #fafafa; border-radius: 1px;}
+.g-bd .content .g-sd .collapseControl .collapsed{background-image: url(../img/recruitment-search/arrow_up.png);}
+.u-btn-more{position: relative;}
+.u-btn-more i{position: absolute; top: 10px; right: -10px; font-size: 0; height: 0; width: 0; border-width: 6px 6px 0; border-style: solid dashed; border-color: #6899ff transparent transparent; overflow: hidden;}
+.g-bd .hotList{width: 916px; margin-top: 30px; padding-top: 20px;}
+.g-bd .hotList>ul>li{margin-bottom: 30px; border: 1px solid #ccc; padding-top: 20px;}
+.g-bd .hotList .fl{margin-bottom: 10px;}
+.g-bd .hotList .fl>a{font-size: 16px; line-height: 22px; color: #6e8cfe; font-weight: normal;}
+.g-bd .hotList .fl>span{font-size: 14px; line-height: 22px; font-weight: lighter; color: #8a8a8a; margin-left: 10px;}
+.g-bd .hotList .salary{font-size: 16px; color: #ff4a49;}
+.g-bd .hotList .topLft{margin-left: 20px; float: left; width: 500px;}
+.g-bd .hotList .incName>a{font-size: 16px; color: #6e8cfe;}
+.g-bd .hotList .incClass{margin-top: 15px;}
+.g-bd .hotList .foot{padding: 10px 0 10px 20px; margin-top: 20px; background-color: #fafafa; font-size: 14px; line-height: 24px;}
+.g-bd .hotList .footLft{float: left;}
+.g-bd .hotList .footRght{margin-left: 490px;}
+.g-bd .hotList .footRght span{border: 1px solid #a8a8a8; margin-left: 10px;}
+.g-bd .simiSearch{margin-top: 30px;}
+.g-bd .simiSearch>p{font-size: 16px; margin-bottom: 10px;}
+.g-bd .simiSearch>p>a{font-size: 14px; color: #6e8cfe; margin-right: 30px;}
+.g-bd .simiSearch>p>a:hover{text-decoration: underline;}
+.g-bd .content .g-mn{overflow: hidden; width: 200px; padding-top: 35px;}
+.g-bd .content .g-mn .history{background-color: #fafafa; padding: 0 10px 30px 10px;}
+.g-bd .content .g-mn .history>h2{font-size: 18px; line-height: 50px; font-weight: normal;}
+.g-bd .content .g-mn .history ul>li{width: 170px; height: 50px; margin-bottom: 10px; padding: 20px 0 10px 10px; background-color: #fff; border-radius: 2px;}
+.g-bd .content .g-mn .history a{font-size: 14px; line-height: 20px;}
+.g-bd .content .g-mn .history .salary{font-size: 16px; line-height: 20px; color: red;}
+.g-bd .content .g-mn .history .incName{font-style: 14px; line-height: 20px; color: #999;}
+.chgPage{margin-top: 50px; margin-left: 350px;}
+.chgPage a{display: inline-block; *display: inline; *zoom: 1; padding: 0 10px; font-size: 14px; line-height: 20px; background-color: #fff; border: 1px solid #ccc;} 
+.chgPage .active{background-color: #6e8cfe;}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/login.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/base.css">
+	<title>register</title>
+	<style type="text/css">
+	.g-bd{height: 440px; top: 100px;}
+	.formHead{list-style-type: none; margin-bottom: 30px;}
+	.formHead li{display: inline-block; *display: inline; *zoom: 1; width: 145px; font-size: 18px; color: #aaa; text-align: center; cursor: pointer; padding-bottom: 20px; border-bottom: 2px solid #ccc;}
+	.formHead .z-crt{border-bottom: 2px solid #3aa8f7; position: relative; color: #3aa8f7;}
+	.formHead .z-crt span{position: absolute; bottom: 0; left: 65px; border-color: transparent transparent #3aa8f7 transparent; border-width: 0 10px 10px 10px;border-style: solid;}
+	.formHead .z-crt span>i{position: absolute; bottom: -12px; left: -8px; border-color: transparent transparent #fff transparent; border-width: 0 8px 8px 8px;border-style: solid;}
+	.occpt{display: inline-block; *display: inline; *zoom: 1; width: 140px; height: 40px; margin-bottom: 10px; border: 1px solid #bbb; text-align: center; cursor: pointer;}
+	.occpt label{ font-size: 16px; line-height: 40px; color: #bbb; cursor: pointer;}
+	.verfi-code{position: relative;}
+	.verfi-code .u-submit{position: absolute; top: -10px; right: 0; width: 100px; background-color: #3aa8f7;}
+	.login-imme{margin-bottom: 50px;} 
+	.login-imme p{margin-bottom: 10px;}
+	.login-imme p>a{font-size: 20px; font-weight: normal; color: #3aa8f7;}
+	.z-crt-brd{border-color: #3aa8f7;}
+	.z-crt-brd label{color: #3aa8f7;}
+	</style>
+</head>
+<body>
+	<div class="g-hd">
+		<a class="logo" href="Gauldin.html"><img src="../src/img/homePage/logo.png"></a>
+	</div>
+	<div class="g-bd clearfix">
+		<div class="g-sd clearfix">
+			<form>
+				<ul class="formHead">
+					<li id="slct-tel" class="slct-item z-crt"><i class="self-icon">&#xe901;</i>手机号码注册<span><i></i></span></li>
+					<li id="slct-email" class="slct-item"><i class="self-icon">&#xe902;</i>邮箱注册<span><i></i></span></li>
+				</ul>
+				<!-- 手机注册 -->
+				<div id="telLogin">
+					<p><input id="username-tel" class="u-input" type="text" name="telphone" placeholder="请输入与验证手机"></p>
+					<p class="verfi-code">
+						<input class="u-input" type="text" name="verfiCode" placeholder="请输入手机验证码">
+						<button type="buttom" class="u-submit">获取验证码</button>
+					</p>
+					<p><input class="u-input" type="password" name="telPassword" placeholder="请输入密码"></p>
+<!-- 					<p>
+						<div class="tel-occpt occpt z-crt-brd"><label>我是求职者</label></div>
+						<div class="tel-occpt occpt" style="margin-left: 15px;"><label>我是HR</label></div>
+					</p> -->
+					<p>
+						<label><input type="checkbox">我已经阅读并接受</label>
+						<a href="#" style="color: #3aa8f7;">《用户协议》</a>
+					</p>
+					<p><button class="u-submit" type="submit">注   册</button></p>
+				</div>
+				<!-- 邮箱注册 -->
+				<div id="emailLogin"  style="display: none;">		
+					<p><input id="username-email" class="u-input" type="text" name="email" placeholder="请输入与验证邮箱"></p>
+					<p><input class="u-input" type="password" name="emailPassword" placeholder="请输入密码"></p>	
+<!-- 					<p>
+						<div class="email-occpt occpt z-crt-brd"><label>我是求职者</label></div>
+						<div class="email-occpt occpt" style="margin-left: 15px;"><label>我是HR</label></div>
+					</p> -->
+					<p>
+						<label><input type="checkbox">我已经阅读并接受</label>
+						<a href="#" style="color: #3aa8f7;">《用户协议》</a>
+					</p>
+					<p><button class="u-submit" type="submit">注   册</button></p>
+				</div>
+			</form>				
+		</div>
+		<div class="g-mn clearfix">
+			<div class="login-imme">
+				<p>已有账号：</p>
+				<p><a href="login.html">直接登录<i class="self-icon">&#xe904;</i></a></p>
+			</div>
+			<p>使用以下账号直接登录</p>
+			<div class="icnLst">
+				<a><img src="../src/img/login/icon-qq.png"></a>
+				<a><img src="../src/img/login/icon-wc.png"></a>
+				<a><img src="../src/img/login/icon-sina.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft"></div>
+	<script type="text/javascript">
+	//兼容IE8,7,6 getElements
+	function getElementsByClassName(className,root,tagName) {   
+	    if(root){
+	        root=typeof root=="string" ? document.getElementById(root) : root;   
+	    }else{
+	        root=document.body;
+	    }
+	    tagName=tagName||"*";                                    
+	    if (document.getElementsByClassName) {                   
+	        return root.getElementsByClassName(className);
+	    }else 
+	    { 
+	        var tag= root.getElementsByTagName(tagName);    
+	        var tagAll = [];                                    
+	        for (var i = 0; i < tag.length; i++) {                
+	            for(var j=0,n=tag[i].className.split(' ');j<n.length;j++){    
+	                if(n[j]==className){
+	                    tagAll.push(tag[i]);
+	                    break;
+	                }
+	            }
+	        }
+	        return tagAll;
+	    }
+	}
+	// 切换登录模式
+	var isTelSelected = 1, isEmailSelected = 0;
+	var items = getElementsByClassName('slct-item');
+	items[0].onclick = function(){
+		if(!/z-crt$/.test(items[0].className))
+		{
+			items[0].className += ' z-crt';
+			items[1].className = 'slct-item';
+		}
+		if(isTelSelected == 0){
+			emailLogin.style.display = 'none';
+			telLogin.style.display = 'block';
+			isTelSelected = 1;
+			isEmailSelected = 0;
+		}
+	}
+	items[1].onclick = function(){
+		if(!/z-crt$/.test(items[1].className))
+		{
+			items[1].className += ' z-crt';
+			items[0].className = 'slct-item';
+		}
+		if(isEmailSelected == 0){
+			telLogin.style.display = 'none';
+			emailLogin.style.display = 'block';
+			isTelSelected = 0;
+			isEmailSelected = 1;
+		}
+	}
+	//切换tel身份
+	var telOccpt = getElementsByClassName('tel-occpt');
+	telOccpt[0].onclick = function(){
+		if(!/z-crt-brd$/.test(telOccpt[0].className))
+		{
+			telOccpt[0].className += ' z-crt-brd';
+			telOccpt[1].className = 'tel-occpt occpt';
+		}
+	}
+	telOccpt[1].onclick = function(){
+		if(!/z-crt-brd$/.test(telOccpt[1].className))
+		{
+			telOccpt[1].className += ' z-crt-brd';
+			telOccpt[0].className = 'tel-occpt occpt';
+		}
+	}
+	//切换email身份
+	var emailOccpt = getElementsByClassName('email-occpt');
+	emailOccpt[0].onclick = function(){
+		if(!/z-crt-brd$/.test(emailOccpt[0].className))
+		{
+			emailOccpt[0].className += ' z-crt-brd';
+			emailOccpt[1].className = 'email-occpt occpt';
+		}
+	}
+	emailOccpt[1].onclick = function(){
+		if(!/z-crt-brd$/.test(emailOccpt[1].className))
+		{
+			emailOccpt[1].className += ' z-crt-brd';
+			emailOccpt[0].className = 'email-occpt occpt';
+		}
+	}
+	//验证username格式
+	var usernameTel = document.getElementById('username-tel');
+	usernameTel.onblur = function(){
+		if(!/^1\d{10}/.test(usernameTel.value)&&usernameTel.value != '')
+			usernameTel.className += ' vertfError';
+		else
+			usernameTel.className = 'u-input';
+	}
+	var usernameEmail = document.getElementById('username-email');
+	usernameEmail.onblur = function(){
+		if(!/^.+@.+\.com$/.test(usernameEmail.value)&&usernameEmail.value != '')
+			usernameEmail.className += ' vertfError';
+		else
+			usernameEmail.className = 'u-input';
+	}
+
+	</script>
+	<script src="../src/js/jquery-1.11.3.min.js"></script>
+	<script src="../src/js/jquery.placeholder.min.js"></script>
+	<script src="../src/js/placeholder.js"></script>
+</body>
+</html>

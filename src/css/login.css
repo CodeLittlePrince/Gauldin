@@ -1,0 +1,23 @@
+.g-hd{height: 300px; background-color: #76aafd;}
+.g-ft{height: 300px; background-color: #fff;}
+.g-bd{position: absolute; top: 150px; left: 25%; width: 630px; height: 330px; background-color: #fff; border-radius: 5px; 
+	box-shadow: 1px 4px 2px 2px #aaa; border: 1px solid #f6f6f6;}
+.g-bd .g-sd{float: left;}
+.g-bd .g-sd form{border-right: 2px solid #eee; padding-right: 20px;}
+.inputText{position: relative;}
+.u-input{width: 290px; height: 40px; background-color: #f5f2f2; font-size: 16px; line-height: 40px; 
+	padding-left: 10px; margin-bottom: 30px; border:none; border-radius: 3px;}
+.u-submit{width: 300px; height: 40px; background-color: #36aafc; font-size: 16px; color: #fff; white-space: pre-wrap; border: none; border-radius: 3px; margin: 10px 0;}
+.g-bd .g-sd{padding: 40px 50px;}
+.g-bd .g-sd .fgtPwd a{font-size: 14px; color: #36aafc; margin-left: 220px;}
+.g-bd .g-sd .noLogin{margin-top: 15px;}
+.g-bd .g-sd .noLogin label{float: left; font-size: 16px; color: #bbb;}
+.g-bd .g-sd .noLogin a{font-size: 18px; color: #36aafc; margin-left: 100px;}
+
+.g-mn{padding-top: 120px; margin-left: 400px;}
+.g-mn p{font-size: 16px; font-weight: bold; color: #808080;}
+.g-mn .icnLst{height: 45px; margin-top: 30px;}
+.g-mn .icnLst a{display: inline-block; width: 50px;}
+
+.logo{position: absolute; left: 50px; top: 50px;}
+.vertfError{border: 1px solid red;}

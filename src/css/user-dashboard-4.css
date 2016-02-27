@@ -1,0 +1,36 @@
+.g-bd .g-mn{text-align: center; width: 785px; background-color: #f3f3f3; padding: 0 0 50px 0;}
+.g-bd .g-mn .top{position: relative; width: 785px; height: 113px; background-color: #8bb9ea;}
+.g-bd .g-mn .top .userThumb{position: absolute; left: 325px; bottom: -60px; border:3px solid #fff; border-radius: 50%;}
+.g-bd .g-mn .top .userThumb img{width: 125px; height: 125px; border-radius: 50%;}
+.g-bd .g-mn .content .userInfo{padding-top: 131px; text-align: center;}
+.g-bd .g-mn .content .userInfo p{margin: 10px 0; font-size: 16px;}
+.g-bd .g-mn .content .userInfo span{margin: 0 5px;}
+.g-bd .g-mn .content .userInfo .userName{font-size: 24px;}
+.g-bd .g-mn .content .userInfo .userDescri{position: relative;}
+.g-bd .g-mn .content .userInfo .edit{position: absolute; right: 151px; color: #6599ff; cursor: pointer; font-size: 14px;}
+.g-bd .g-mn .content .tt{display: inline-block; *display: inline; *zoom: 1; padding: 5px 10px; background-color: #e5e5e5; border-radius: 3px; font-size: 16px;}
+.g-bd .g-mn .content .outer{position: absolute; top: -15px; left: 330px; padding: 0 20px; background-color: #f3f3f3;}
+.g-bd .g-mn .content .add{color: #6599ff; line-height: 20px; cursor: pointer;}
+.g-bd .g-mn .content .circle{display: inline-block; *display: inline; *zoom: 1; width: 20px; height: 20px; margin-right: 5px; border: 1px solid #6599ff; border-radius: 50%;}
+.g-bd .g-mn .content .addArea{width: 625px;  margin: 20px auto; padding: 50px 0; text-align: center; background-color: #ebe7e6; border-radius: 5px;}
+.g-bd .g-mn .content .margin-top-30{margin-top: 30px;}
+.g-bd .g-mn .content .p-relative{position: relative;}
+.g-bd .g-mn .content .line{border-top: 2px solid #ccc;} 
+.g-bd .g-mn .content .p-absolute{position: absolute; top: -15px; right: 80px;}
+.g-bd .g-mn .content .addback{padding:0 20px; background-color: #f3f3f3;}
+.g-bd .g-mn .content .userSelfDes .desArea{width: 295px; height: 150px; margin: 0 auto;} 
+.g-bd .g-mn .content .btn{padding: 5px 20px; color: #fff; background-color: #3465ff; margin-top: 30px;}
+.g-bd .g-mn .content .btn:first-child{margin-right: 30px;}
+.g-bd .g-mn .content .userSelfDes .addArea p{margin-top: 30px;}
+.g-bd .g-mn .content .fileUpload{font-size: 16px; margin-top: 30px; cursor: pointer;}
+.g-bd .g-mn .content .star{color: red;}
+.g-bd .g-mn .content .userInfoChange{margin-top: 100px;}
+.g-bd .g-mn .content .userInfoChange p{margin: 10px 0;}
+.g-bd .g-mn .content form{width: 450px; margin: 0 auto; font-size: 18px; line-height: 32px;}
+.g-bd .g-mn .content form .text{width: 310px; height: 32px; padding-left: 5px;}
+.g-bd .g-mn .content .format label{float: left;}
+.g-bd .g-mn .content .format input,select{float: right;}
+.g-bd .g-mn .content .addAreaDetail p{margin: 10px 0;}
+.g-bd .g-mn .content .addAreaDetail textarea{width: 260px; height: 80px; margin-left: 40px; padding: 10px 5px;}
+.g-bd .g-mn .content .moreExper{width: 300px; height: 24px; margin: 10px auto; border: 2px solid #aaa; color: #111; font-size: 14px; line-height: 24px; text-align: center; border-radius: 2px; cursor: pointer;}
+.g-bd .g-mn .content .h5{font-size: 18px; margin: 20px;}

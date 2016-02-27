@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/home.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/dashboard-base.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/user-dashboard-4.css">
+	<title>user-dashboard-4</title>
+</head>
+<body>
+	<div class="fixed">
+		<div id="top" class="g-hd clearfix">
+			<div class="g-sd">
+				<div class="logo">
+					<a class="logo" href="Gauldin.html"><img src="../src/img/homePage/logo.png"></a>
+				</div>
+			</div>
+			<div class="g-sdr">
+				<div class="u-log">
+					<a href="login.html">
+						<button type="button">登录</button>
+					</a>			
+				</div>
+				<div class="u-reg">		
+					<a href="#">
+						<button type="button">注册</button>
+					</a>		
+				</div>
+			</div>
+			<div class="g-mn">
+				<div class="m-nav">
+					<div class="menu" >
+						<ul>
+							<li><a href="Gauldin.html">首页</a></li>
+							<li><a href="recruitment.html">招聘</a></li>
+							<li><a href="#">职业规划</a></li>
+							<li><a href="#">创业孵化</a></li>
+						</ul>
+					</div>
+					<div id="burger" >
+						<span class="u-burger">
+							<i></i>
+							<i></i>
+							<i></i>
+						</span>
+						<div id="hd-menu" class="hd-menu" style="display:none;">
+							<ul>
+								<li><a href="Gauldin.html">首页</a></li>
+								<li><a href="recruitment.html">招聘</a></li>
+								<li><a href="#">职业规划</a></li>
+								<li><a href="#">创业孵化</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mid">
+		<div class="g-bd">
+			<div class="fixed">
+				<div class="g-sd">
+					<div class="tt">
+						<h3>个人中心</h3>
+					</div>
+					<div class="category">
+						<ul>
+							<li><a href="#">简历预览<i class="self-icon">&#xe908;</i></a></li>
+							<li><a href="#">基本信息</a></li>
+							<li><a href="#workExp">工作经历</a></li>
+							<li><a href="#selfDesc">自我描述</a></li>
+						</ul>
+						<ul>
+							<li><a href="user-dashboard-3.html">简历投递状态</a></li>
+							<li><a href="">投递成功</a></li>
+							<li><a href="">被查看</a></li>
+							<li><a href="">待沟通</a></li>
+							<li><a href="">通知面试</a></li>
+						</ul>
+						<ul>
+							<li><a href="user-dashboard-2.html">面试评价</a></li>
+						</ul>
+						<ul>
+							<li><a href="#">我收藏的职位</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+			<div class="g-mn">
+				<div class="top">
+					<div class="userThumb">
+						<img src="../src/img/recruitment/dog-ori.jpg" alt="thumb">
+					</div>
+				</div>
+				<div class="content" id="primInfo">
+					<div id="baseInfo" class="userInfo">
+						<p class="userName">Lina</p>
+						<p class="userDescri">
+							<span class="desc">我是设计师</span>
+							<span id="edit" class="edit"><i class="self-icon">&#xe909;</i>编辑</span>
+						</p>
+						<p>
+							<span class="userMajor">计算机</span>
+							·
+							<span class="userSchool">海南大学</span>
+						</p>
+						<p>
+							<span class="userEdica"><i class="self-icon">&#xe90a;</i>本科</span>
+							<span class="userIde">应届毕业生</span>
+							<span class="userCity">海口</span>
+						</p>
+						<p>
+							<span class="userTel">12345678911</span>
+							<span class="userEmail"><i class="self-icon">&#xe902;</i>1009291020@163.com</span>
+						</p>
+					</div>
+					<div id="userInfoChange" class="userInfoChange" style="display:none;">
+						<form action="#" name="reg_testdate">
+							<p class="format clearfix">	
+								<label for="name" class="star">*</label>
+								<label for="name">姓名：</label>
+								<input type="text" id="name" class="text">
+							</p>
+							<p class="format clearfix">
+								<label for="sex" class="star">*</label>
+								<label for="sex">性别：</label>
+								<select name="sex" id="sex">
+									<option value="none">请选择</option>
+									<option value="male">男</option>
+									<option value="female">女</option>
+									<option value="other">其他</option>
+								</select>
+							</p>
+							<p class="format clearfix">
+								<label for="birth" class="star">*</label>
+								<label for="birth">出生日期：</label>
+								<select name="DD">
+								  <option value="none">日</option>
+								</select>
+								<select name="MM" onchange="MMDD(this.value)">
+								  <option value="none">月</option>
+								</select>
+								<select name="YYYY" onchange="YYYYDD(this.value)">
+								  <option value="none">年</option>
+								</select>
+								
+							</p>
+							<p class="format clearfix">
+								<label for="tel" class="star">*</label>
+								<label for="tel">联系电话：</label>
+								<input type="text" id="tel" class="text">
+							</p>
+							<p class="format clearfix">
+								<label for="email" class="star">*</label>
+								<label for="email">电子邮件：</label>
+								<input type="text" id="email" class="text">
+							</p>
+							<p class="format clearfix">
+								<label for="education" class="star">*</label>
+								<label for="education">最高学历：</label>
+								<select id="education">
+									<option name="education" value="none">请选择</option>
+									<option name="education" value="college">专科</option>
+									<option name="education" value="bachelor">本科</option>
+									<option name="education" value="master">学士</option>
+									<option name="education" value="phd">博士</option>
+									<option name="education" value="post">博士后</option>
+								</select>
+							</p>
+							<div id="educationSub" style="display:none;">
+								<p class="format clearfix">
+									<label for="school">学校：</label>
+									<input type="text" id="school" class="text">
+								</p>
+								<p class="format clearfix">
+									<label for="major">专业：</label>
+									<input type="text" id="major" class="text">
+								</p>
+								<p class="format clearfix">
+									<label for="gradDate">毕业年份：</label>
+									<input type="text" id="gradDate" class="text">
+								</p>
+							</div>
+							<p class="format clearfix">
+								<label for="workExper" class="star">*</label>
+								<label for="workExper">工作经验：</label>
+								<input type="text" id="workExper" class="text">
+							</p>
+							<p class="format clearfix">
+								<label for="city" class="star">*</label>
+								<label for="city">暂居地点：</label>
+								<input type="text" id="city" class="text">
+							</p>
+							<p>
+								<a href="javascript:;" id="saveBase" class="btn">保存</a>
+								<a href="javascript:;" id="cancelBase" class="btn">取消</a>
+							</p>
+						</form>
+					</div>
+					<div id="workExp" class="userInternExper margin-top-30 p-relative line">
+						<p>
+							<div class="outer">
+								<h3 class="tt">实习经历</h3>
+							</div>
+							<div class="p-absolute addback">
+								<span id="addIntern-1" class="add"><i class="circle">+</i>添加</span>
+							</div>
+						</p>
+						<div id="addArea-intern" class="addArea">
+							<span id="addIntern-2" class="add"><i class="circle">+</i>添加实习经历</span>
+							<div id="addInternParent" class="addAreaDetail" style="display:none;">
+							    <form action="#">
+							        <p class="format clearfix">
+							            <label for="incName" class="star">*</label>
+							            <label for="incName">公司名称：</label>
+							            <input type="text" id="incName" class="text">
+							        </p>
+							        <p class="format clearfix">
+							            <label for="incPos" class="star">*</label>
+							            <label for="incPos">工作职位：</label>
+							            <input type="text" id="incPos" class="text">
+							        </p>
+							        <p class="format clearfix">
+							            <label for="jobProper" class="star">*</label>
+							            <label for="jobProper">工作性质：</label>
+							            <input type="text" id="jobProper" class="text">
+							        </p>
+							        <p class="format clearfix">
+							            <label for="employDate" class="star">*</label>
+							            <label for="employDate">入职时间：</label>
+							            <input type="text" id="employDate" class="text" placeholder="如：2015.9">
+							        </p>
+							        <p class="format clearfix">
+							            <label for="departDate" class="star">*</label>
+							            <label for="departDate">离职时间：</label>
+							            <input type="text" id="departDate" class="text" placeholder="如：2015.9">
+							        </p>
+							        <p>
+							            <a href="javascript:;" class="btn">保存</a>
+							            <a href="javascript:;" class="btn" id="cancelWorkExper">取消</a>
+							        </p>
+							    </form>
+							</div>
+						</div>
+					</div>
+					<div class="userProjExper margin-top-30 p-relative line">
+						<p>
+							<div class="outer">
+								<h3 class="tt" ="">项目经验</h3>
+							</div>
+							<div class="p-absolute addback">
+								<span id="addProj-1" class="add"><i class="circle">+</i>添加</span>
+							</div>
+						</p>
+						<div id="addArea-project" class="addArea">
+							<span id="addProj-2" class="add"><i class="circle">+</i>添加项目经验</span>
+							<div id="addProjParent" class="addAreaDetail" style="display:none;">
+							    <form action="#">
+							        <p class="format clearfix">
+							            <label for="incName" class="star">*</label>
+							            <label for="incName">公司名称：</label>
+							            <input type="text" id="incName" class="text">
+							        </p>
+							        <p class="format clearfix">
+							            <label for="incPos" class="star">*</label>
+							            <label for="incPos">工作职位：</label>
+							            <input type="text" id="incPos" class="text">
+							        </p>
+							        <p class="format clearfix">
+							            <label for="jobProper" class="star">*</label>
+							            <label for="jobProper">岗位职责：</label>
+							            <input type="text" id="jobProper" class="text">
+							        </p>
+							        <p class="format clearfix">
+							            <label for="proDesc" class="star">*</label>
+							            <label for="proDesc">项目描述：</label>
+							            <textarea></textarea>
+							        </p>
+							        <p class="format clearfix">
+							            <label for="proDate" class="star">*</label>
+							            <label for="proDate">项目时间：</label>
+							            <input type="text" id="proDate" class="text" placeholder="如：2015.9-2015.12">
+							        </p>
+							        <p class="format clearfix">
+							            <label for="proLink">&nbsp;展示链接：</label>
+							            <input type="text" id="proLink" class="text">
+							        </p>
+							        <p>
+							            <a href="javascript:;" class="btn saveProjExper">保存</a>
+							            <a href="javascript:;" class="btn" id="cancelProjExper">取消</a>
+							        </p>
+							    </form>
+							</div>
+						</div>
+					</div>
+					<div id="selfDesc" class="userSelfDes margin-top-30 p-relative line">
+						<p>
+							<div class="outer">
+								<h3 class="tt">自我描述</h3>
+							</div>
+							<!-- <span class="add p-absolute"><i class="cicle">+</i>添加</span> -->
+						</p>
+						<div class="addArea">
+							<textarea name="desArea" id="desArea" class="desArea"></textarea>
+							<p>
+								<a id="save"  class="btn">保存</a>
+								<a id="cancel" class="btn">取消</a>
+							</p>
+						</div>
+					</div>
+					<label class="fileUpload" for="file"><i class="self-icon">&#xe90b;</i>我要上传简历</label>
+					<input id="file" type="file" style="display:none;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft">
+		<div>
+			<!-- 公司落款 -->
+		</div>
+	</div>
+	<script type="text/javascript" src="../src/js/base.js"></script>
+	<script type="text/javascript" src="../src/js/user-dashboard-4.js"></script>
+	<script src="../src/js/jquery-1.11.3.min.js"></script>
+	<script src="../src/js/jquery.placeholder.min.js"></script>
+	<script src="../src/js/placeholder.js"></script>
+</body>
+</html>

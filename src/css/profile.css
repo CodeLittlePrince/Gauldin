@@ -1,0 +1,51 @@
+.mid{text-align: center;}
+.g-bd .g-sd .profileDetail .incName .att{margin: 50px 0 0 20px;}
+.g-bd .g-sd .profileDetail .incName .att .self-icon{font-size: 24px; line-height: 26px;}
+.g-bd .g-sd .profileDetail .incName .att .self-icon:hover{color: #ccc;}
+.g-bd .g-sd .profileDetail .incName h1{float: left;}
+.g-bd{display: inline-block; *display: inline; *zoom: 1; padding: 30px 0;}
+.g-bd .g-sd{float: left; width: 680px; margin-right: 40px; text-align: left;}
+.g-bd .g-sd .profile{position: relative; background-color: #f6f6f6; color: #777; padding: 100px 35px;}
+.g-bd .g-sd .profileDetail .incName{position: absolute; top: -10px; width: 610px; height: 113px; padding: 0 35px 10px 0;}
+.g-bd .g-sd .profileDetail .incName h1 p{margin-bottom: 10px; font-size: 14px; font-weight: normal; color: #fff;}
+.g-bd .g-sd .profileDetail .incName h1 i{position: absolute; left: -15px; top: 0; display: inline-block; *display: inline; *zoom: 1; z-index: 111; border-width: 0 0 10px 15px; border-style: solid; border-color: transparent transparent #6667ff transparent;}
+.g-bd .g-sd .profileDetail .incName h1{position: relative; width: 235px; height: 77px; padding: 10px 0 0 20px; margin-right: 200px; background-color: #9a99ff; font-size: 28px; font-weight: normal; color: #fff;}
+.g-bd .g-sd .profileDetail .incName a{display: inline-block; *display: inline; *zoom: 1; width: 10px; height: 10px;}
+.g-bd .g-sd .profileDetail .jobPortray{padding-bottom: 20px;  border-bottom: 1px solid #ccc;}
+.g-bd .g-sd .profileDetail .jobPortray .salary{font-size: 24px; color: red;}
+.g-bd .g-sd .profileDetail .jobPortray i{line-height: 22px;}
+.g-bd .g-sd .profileDetail .jobPortray span{font-size: 22px; }
+.g-bd .g-sd .profileDetail .jobPortray p{font-size: 22px; margin: 15px 0;} 
+.g-bd .g-sd .profileDetail .jobPortray label{font-size: 14px;}
+.g-bd .g-sd .profileDetail .jobDetail h3{display: inline-block; *display: inline; *zoom: 1; margin: 30px 0 20px 0; padding: 5px 5px; border-left: 5px solid #6665fe; font-size: 16px; font-weight: normal;}
+.g-bd .g-sd .profileDetail .jobDetail p{margin-bottom: 30px; line-height: 20px;}
+.g-bd .g-sd .profileDetail .jobDetail li{list-style: decimal; margin-left: 20px;}
+.g-bd .g-sd .profileDetail .publisher{position: relative; width: 610px; height: 100px;}
+.g-bd .g-sd .profileDetail .publisher h3{display: inline-block; *display: inline; *zoom: 1; position: absolute; z-index: 222; left: 251px; padding: 0 10px; background-color: #f6f6f6; text-align: center;}
+.g-bd .g-sd .profileDetail .border{position: absolute; top: 8px; padding: 20px 20px; border: 1px dashed #ccc; width: 560px; height: 70px;}
+.g-bd .g-sd .profileDetail .publishName{float: left;}
+.g-bd .g-sd .profileDetail .publishName .publisherName{display: inline-block; *display: inline; *zoom: 1; padding: 10px 20px;}
+.g-bd .g-sd .profileDetail .publishName .name{font-size: 20px; color: #111;}
+.g-bd .g-sd .profileDetail .publishName .position{font-size: 18px; line-height: 30px;}
+.g-bd .g-sd .profileDetail .publishName img{float: left; border: 3px solid #ccc; border-radius: 50%; float: left;}
+.g-bd .g-sd .profileDetail .publishData{margin-left: 320px;}
+.g-bd .g-sd .profileDetail .publishData	.data{font-size: 18px; color: #111; margin-bottom: 10px;}
+.g-bd .g-sd .profileDetail .publishData	.process{float: left; margin-right: 30px;}
+.g-bd .g-mn{float: left; width: 280px; background-color: #fff; text-align: left; color: #777;}
+.g-bd .g-mn .incLogo>img{border: 1px solid #96b7d8;}
+.g-bd .g-mn .incLogo a{font-size: 16px; color: #96b7d8;}
+.g-bd .g-mn .incLi li{margin: 10px 0; line-height: 20px;}
+.g-bd .g-mn .incLi a{text-decoration: underline;}
+.g-bd .g-mn .incLi span{display: inline-block; *display: inline; *zoom: 1; margin-right: 10px; padding: 5px 5px 0 5px; background-color: #f6f6f6;}
+.g-bd .g-mn .breakLine{height: 10px; margin: 20px 0; background: url(../img/profile/breakline.gif) repeat-x;}
+.g-bd .g-mn .similarPosition{margin-top: 20px;}
+.g-bd .g-mn .similarPosition label{display: inline-block; *display: inline; *zoom: 1; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3366ff; font-size: 14px; font-weight: bold;}
+.g-bd .g-mn .positionList li{padding: 10px 0; border-bottom: 1px dashed #ccc;}
+.g-bd .g-mn .positionList li a{color: #777;}
+.g-bd .g-mn .positionList li:hover{background: #f6f6f6;}
+.g-bd .g-mn .positionList li img{border: 1px solid #ccc; margin-right: 10px; }
+.g-bd .g-mn .positionList li div{display: inline-block; *display: inline; *zoom: 1;}
+.g-bd .g-mn .positionList h2{font-size: 16px;}
+.g-bd .g-mn .positionList .salary{font-size: 16px; color: red;}
+.g-bd .g-mn .positionList .pos{margin-left: 100px;}
+.g-bd .g-sd  .sendProfile{position: absolute; right: 40px; bottom: 15px; display: inline-block; *display: inline; *zoom: 1; padding: 10px 30px; background-color: #3366ff; color: #fff;}

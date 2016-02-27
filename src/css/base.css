@@ -1,0 +1,27 @@
+.clearfix::after{content: '.'; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden;}
+@font-face {
+	font-family: 'self-icon';
+	src:url('../lib/fonts/icomoon.eot?');
+	src:url('../lib/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../lib/fonts/icomoon.ttf?') format('truetype'),
+		url('../lib/fonts/icomoon.woff?') format('woff'),
+		url('../lib/fonts/icomoon.svg?#self-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.self-icon{font-family: "self-icon"; font-style: normal; font-weight: normal; font-size: 18px;
+-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; line-height: 18px; vertical-align: bottom; margin: 0 5px;}
+.icon-arrowR{position: relative; display: inline-block; *display: inline; *zoom: 1; width: 10px; height: 0px; border-color: transparent  transparent  transparent #aaa ; border-width: 7px 0 7px 7px; border-style: solid; float: right; margin-right: 10px;}
+.icon-arrowR i{position: absolute; left: -7px; top: -4px; border-color: transparent transparent transparent #f6f6f6; border-width: 4px 0 4px 4px; border-style: solid;}
+.m-searchbar{position: relative; width: 746px; height: 37px; border: 2px solid #3366ff;}
+.m-searchbar .input{width: 736px; height: 37px; border: none; font-size: 16px; line-height: 33px; padding-left: 10px;}
+.m-searchbar .submit{display: inline-block; *display: inline; *zoom: 1; position: absolute; right: 0; top: 0; width: 144px; height: 37px; line-height: 37px; text-align: center; border: none; background-color: #3366ff; font-size: 16px; color: #fff; cursor: pointer;}
+.rocket{position: fixed; display: inline-block; *display: inline; *zoom: 1; bottom: 130px; right: 50px; width: 28px; height: 64px; background: url(../img/recruitment/go-top.png) no-repeat;}
+.rocket:hover{background: url(../img/recruitment/go-top.png) -28px 0 no-repeat}
+.u-btn{display: inline-block; *display: inline; *zoom: 1; padding: 5px 20px; background-color: #6599ff; border: none; border-radius: 2px; font-size: 16px; color: #fff; cursor: pointer;} 
+.m-select-filter{position: relative; width: 70px; padding: 0 10px 0 5px; background-color: #fff; font-size: 14px; line-height: 22px; color:#555; border: 1px solid #f3f3f3; border-radius: 1px;}
+.m-select-filter span{cursor: default;}
+.m-select-filter i{position: absolute; top: 8px; right: 5px; border-width: 6px 6px 0; border-style: solid dashed; border-color: #9b9b9b transparent transparent; overflow: hidden;}
+.m-select-filter ul{position: absolute; top: 23px; left: 0; right: 0; border: 1px solid #f3f3f3;}
+.m-select-filter li a{display: block; width: 73px; padding: 5px; background-color: #fff;}
+.m-select-filter li a:hover{background-color: #fafafa; color: #6899ff;}

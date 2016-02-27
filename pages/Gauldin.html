@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../src/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/home.css">
+	<title>Home</title>
+</head>
+<body>
+<div class="fixed">
+	<div id="top" class="g-hd clearfix">
+		<div class="g-sd">
+			<div class="logo">
+				<a class="logo" href="Gauldin.html"><img src="../src/img/homePage/logo.png"></a>
+			</div>
+		</div>
+		<div class="g-sdr">
+			<div class="u-log">
+				<a href="login.html">
+					<button type="button">登录</button>
+				</a>			
+			</div>
+			<div class="u-reg">		
+				<a href="#">
+					<button type="button">注册</button>
+				</a>		
+			</div>
+		</div>
+		<div class="g-mn">
+			<div class="m-nav">
+				<div class="menu" >
+					<ul>
+						<li><a href="Gauldin.html">首页</a></li>
+						<li><a href="recruitment.html">招聘</a></li>
+						<li><a href="#">职业规划</a></li>
+						<li><a href="#">创业孵化</a></li>
+					</ul>
+				</div>
+				<div id="burger" >
+					<span class="u-burger">
+						<i></i>
+						<i></i>
+						<i></i>
+					</span>
+					<div id="hd-menu" class="hd-menu" style="display:none;">
+						<ul>
+							<li><a href="Gauldin.html">首页</a></li>
+							<li><a href="recruitment.html">招聘</a></li>
+							<li><a href="#">职业规划</a></li>
+							<li><a href="#">创业孵化</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="g-bd clearfix">
+		<div class="g-mn-1">
+			<div class="mn">
+				<img src="../src/img/homePage/map.png" width="500px" height="300px">	
+			</div>
+		</div>
+		<div class="g-mn-2 clearfix">
+			<img src="../src/img/homePage/offer.png">
+			<div class="hd">
+				<div class="tt">
+					<!-- 人才招聘标题 -->
+					<h2>Recruitment</h2>
+					<h2>-人才招聘-</h2> 
+				</div>
+			</div>
+			<div class="mn">
+				<div class="info-lst">					
+					<ul class="m-lst">
+						<li><span></span>原因一</li>
+						<li><span></span>原因二</li>
+						<li><span></span>原因三</li>
+						<li><span></span>原因四</li>
+					</ul>
+					<a href="#">
+						<button class="u-bt bt">前去了解</button>
+					</a>			
+				</div>
+			</div>
+		</div>
+		<div class="g-mn-3 clearfix">
+			<img src="../src/img/homePage/career.png" height="300px">
+			<div class="hd">
+				<div class="tt">
+					<!-- 职业标题 -->
+					<h2>Career Planning</h2>
+					<h2>-职业规划-</h2> 
+				</div>
+			</div>
+			<div class="mn">
+				<div class="info-lst">
+					<ul class="m-lst">
+						<li><span></span>原因一</li>
+						<li><span></span>原因二</li>
+						<li><span></span>原因三</li>
+						<li><span></span>原因四</li>
+					</ul>
+					<a href="#">
+						<button class="u-bt bt">前去了解</button>
+					</a>				
+				</div>
+			</div>
+		</div>
+		<div class="g-mn-4 clearfix">
+			<img src="../src/img/homePage/recruitment.png" height="300px">
+			<div class="hd">
+				<div class="tt">
+					<!-- 创业标题 -->
+					<h2>Recruitment</h2>
+					<h2>-创业孵化-</h2>
+				</div>
+			</div>
+			<div class="mn">
+				<div class="info-lst">
+					<ul class="m-lst">
+						<li><span></span>原因一</li>
+						<li><span></span>原因二</li>
+						<li><span></span>原因三</li>
+						<li><span></span>原因四</li>
+					</ul>
+					<a href="#">
+						<button class="u-bt bt">前去了解</button>
+					</a>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft">
+		<div>
+			<!-- 公司落款 -->
+		</div>
+	</div>
+	<script type="text/javascript">
+		var burger = document.getElementById('burger');
+		var hdMenu = document.getElementById('hd-menu');
+		burger.onclick = function(){
+		if(hdMenu.style.display === 'block')
+			hdMenu.style.display = 'none';
+		else
+			hdMenu.style.display = 'block';
+	}
+	</script>
+</body>
+</html>
